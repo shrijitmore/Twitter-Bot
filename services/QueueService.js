@@ -5,10 +5,9 @@ const logger = require('../utils/logger');
 
 class QueueService {
   constructor() {
-    // ---- Redis Connection ----
+    // ---- Redis Client for App Logic ----
     if (config.redis.url) {
       this.redisClient = new Redis(config.redis.url, {
-        maxRetriesPerRequest: null,
         tls: config.redis.url.startsWith("rediss://") ? {} : undefined,
       });
     } else {
@@ -16,7 +15,6 @@ class QueueService {
         host: config.redis.host,
         port: config.redis.port,
         password: config.redis.password || undefined,
-        maxRetriesPerRequest: null,
       });
     }
 
@@ -29,46 +27,36 @@ class QueueService {
     });
 
     // ---- Bull Queues ----
+    const redisConfig = config.redis.url
+      ? config.redis.url
+      : {
+          port: config.redis.port,
+          host: config.redis.host,
+          password: config.redis.password,
+        };
+
     this.tweetQueue = new Queue('tweet processing', {
-      redis: {
-        port: config.redis.port,
-        host: config.redis.host,
-        password: config.redis.password,
-      },
+      redis: redisConfig,
       defaultJobOptions: {
         removeOnComplete: 100,
         removeOnFail: 50,
         attempts: 3,
-        backoff: {
-          type: 'exponential',
-          delay: 2000,
-        },
+        backoff: { type: 'exponential', delay: 2000 },
       },
     });
 
     this.scheduledTweetQueue = new Queue('scheduled tweets', {
-      redis: {
-        port: config.redis.port,
-        host: config.redis.host,
-        password: config.redis.password,
-      },
+      redis: redisConfig,
       defaultJobOptions: {
         removeOnComplete: 50,
         removeOnFail: 25,
         attempts: 5,
-        backoff: {
-          type: 'exponential',
-          delay: 5000,
-        },
+        backoff: { type: 'exponential', delay: 5000 },
       },
     });
 
     this.dailyQuotaResetQueue = new Queue('daily quota reset', {
-      redis: {
-        port: config.redis.port,
-        host: config.redis.host,
-        password: config.redis.password,
-      },
+      redis: redisConfig,
     });
 
     this.setupQueueEvents();
