@@ -1,32 +1,34 @@
 const Queue = require('bull');
-const Redis = require('redis');
+const Redis = require('ioredis');
 const config = require('../config');
 const logger = require('../utils/logger');
 
 class QueueService {
   constructor() {
-    this.redisClient = Redis.createClient({
-      socket: {
+    // ---- Redis Connection ----
+    if (config.redis.url) {
+      this.redisClient = new Redis(config.redis.url, {
+        maxRetriesPerRequest: null,
+        tls: config.redis.url.startsWith("rediss://") ? {} : undefined,
+      });
+    } else {
+      this.redisClient = new Redis({
         host: config.redis.host,
         port: config.redis.port,
-      },
-      password: config.redis.password,
-    });
+        password: config.redis.password || undefined,
+        maxRetriesPerRequest: null,
+      });
+    }
 
     this.redisClient.on('error', (err) => {
       logger.error('Redis Client Error:', err);
     });
 
     this.redisClient.on('connect', () => {
-      logger.info('Connected to Redis');
+      logger.info('✅ Connected to Redis');
     });
 
-    // Connect to Redis
-    this.redisClient.connect().catch(err => {
-      logger.error('Failed to connect to Redis:', err);
-    });
-
-    // Create different queues for different types of jobs
+    // ---- Bull Queues ----
     this.tweetQueue = new Queue('tweet processing', {
       redis: {
         port: config.redis.port,
@@ -72,8 +74,8 @@ class QueueService {
     this.setupQueueEvents();
   }
 
+  // ---- Queue Events ----
   setupQueueEvents() {
-    // Tweet Queue Events
     this.tweetQueue.on('completed', (job, result) => {
       logger.info(`Tweet job ${job.id} completed:`, result);
     });
@@ -82,7 +84,6 @@ class QueueService {
       logger.error(`Tweet job ${job.id} failed:`, err.message);
     });
 
-    // Scheduled Tweet Queue Events
     this.scheduledTweetQueue.on('completed', (job, result) => {
       logger.info(`Scheduled tweet job ${job.id} completed:`, result);
     });
@@ -92,7 +93,7 @@ class QueueService {
     });
   }
 
-  // Add immediate tweet to queue
+  // ---- Add Jobs ----
   async addTweetJob(tweetData, options = {}) {
     try {
       const job = await this.tweetQueue.add('process-tweet', tweetData, {
@@ -108,14 +109,9 @@ class QueueService {
     }
   }
 
-  // Add scheduled tweet to queue
   async addScheduledTweetJob(scheduleData, cronExpression) {
     try {
-      // Structure the job data to match what processScheduledTweet expects
-      const jobData = {
-        scheduleData: scheduleData
-      };
-      
+      const jobData = { scheduleData };
       const job = await this.scheduledTweetQueue.add('process-scheduled-tweet', jobData, {
         repeat: { cron: cronExpression },
         removeOnComplete: true,
@@ -129,7 +125,7 @@ class QueueService {
     }
   }
 
-  // Get queue statistics
+  // ---- Queue Stats ----
   async getQueueStats() {
     try {
       const [tweetWaiting, tweetActive, tweetCompleted, tweetFailed] = await Promise.all([
@@ -164,7 +160,7 @@ class QueueService {
     }
   }
 
-  // Cancel scheduled tweet
+  // ---- Cancel Jobs ----
   async cancelScheduledTweet(jobId) {
     try {
       const job = await this.scheduledTweetQueue.getJob(jobId);
@@ -180,11 +176,11 @@ class QueueService {
     }
   }
 
-  // Smart rate limit management
+  // ---- Rate Limit ----
   async canProcessTweet() {
     try {
-      const dailyCount = await this.redisClient.get('daily_tweet_count') || 0;
-      const remaining = config.rateLimits.dailyTweetLimit - parseInt(dailyCount);
+      const dailyCount = await this.getDailyCount();
+      const remaining = config.rateLimits.dailyTweetLimit - dailyCount;
       return remaining > 0;
     } catch (error) {
       logger.error('Failed to check tweet rate limit:', error);
@@ -197,7 +193,7 @@ class QueueService {
       const today = new Date().toDateString();
       const key = `daily_tweet_count:${today}`;
       const count = await this.redisClient.incr(key);
-      await this.redisClient.expire(key, 86400); // Expire in 24 hours
+      await this.redisClient.expire(key, 86400); // 24 hours
       return count;
     } catch (error) {
       logger.error('Failed to increment daily count:', error);
@@ -210,14 +206,14 @@ class QueueService {
       const today = new Date().toDateString();
       const key = `daily_tweet_count:${today}`;
       const count = await this.redisClient.get(key) || 0;
-      return parseInt(count);
+      return parseInt(count, 10);
     } catch (error) {
       logger.error('Failed to get daily count:', error);
       return 0;
     }
   }
 
-  // Cleanup method
+  // ---- Cleanup ----
   async close() {
     await this.tweetQueue.close();
     await this.scheduledTweetQueue.close();

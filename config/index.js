@@ -4,11 +4,13 @@ const config = {
   port: process.env.PORT || 8080,
   
   // Redis Configuration
-  redis: {
-    host: process.env.REDIS_HOST || 'localhost',
-    port: process.env.REDIS_PORT || 6379,
-    password: process.env.REDIS_PASSWORD || null,
-  },
+  redis: process.env.REDIS_URL
+  ? { url: process.env.REDIS_URL } // Railway (single URL)
+  : {                              // Local dev
+      host: process.env.REDIS_HOST || 'localhost',
+      port: process.env.REDIS_PORT || 6379,
+      password: process.env.REDIS_PASSWORD || null,
+    },
   
   // Supabase Configuration
   supabase: {

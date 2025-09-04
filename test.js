@@ -1,18 +1,10 @@
-const { TwitterApi } = require('twitter-api-v2');
-const dotenv = require('dotenv');
-dotenv.config();
-const client = new TwitterApi({
-  appKey: process.env.TWITTER_API_KEY,
-  appSecret: process.env.TWITTER_API_SECRET,
-  accessToken: process.env.TWITTER_ACCESS_TOKEN,
-  accessSecret: process.env.TWITTER_ACCESS_SECRET,
-});
+const Redis = require("ioredis");
 
-(async () => {
-  try {
-    const me = await client.v2.me();
-    console.log('Connected as', me.data.username);
-  } catch (e) {
-    console.error('Auth failed:', e);
-  }
-})();
+const redis = new Redis("redis://default:wDIwutvAIBPRFpCFcJRrmSKtQSirZJBF@switchyard.proxy.rlwy.net:20503");
+
+redis.ping().then(res => {
+  console.log("PING response:", res); // should log "PONG"
+  redis.quit();
+}).catch(err => {
+  console.error("Connection failed:", err);
+});

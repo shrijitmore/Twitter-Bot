@@ -265,3 +265,313 @@
 {"level":"error","message":"Scheduled tweet job repeat:c43a515b11e2edfa7a70baf521849e3a:1756979160000 failed:","service":"twitter-bot","timestamp":"2025-09-04T09:46:01.509Z"}
 {"jobData":{"scheduleData":{"custom_prompt":"DAy 3 challanege wbout Web3 start with day 1","id":"b2b78ef0-57c9-4ccd-b7f7-0afc3fac58c8","image_prompt":null,"include_image":false,"schedule_type":"everyMinute","status":"scheduled","text":null}},"level":"info","message":"Processing scheduled tweet job: repeat:c43a515b11e2edfa7a70baf521849e3a:1756979160000","service":"twitter-bot","timestamp":"2025-09-04T09:46:06.523Z"}
 {"level":"info","message":"SIGINT received, shutting down gracefully...","service":"twitter-bot","timestamp":"2025-09-04T09:46:07.251Z"}
+{"level":"info","message":"🚀 Twitter Bot server running on port 8080","service":"twitter-bot","timestamp":"2025-09-04T09:56:00.772Z"}
+{"level":"info","message":"Environment: development","service":"twitter-bot","timestamp":"2025-09-04T09:56:00.777Z"}
+{"level":"info","message":"Mode: PRODUCTION","service":"twitter-bot","timestamp":"2025-09-04T09:56:00.779Z"}
+{"level":"info","message":"Health check: http://localhost:8080/health","service":"twitter-bot","timestamp":"2025-09-04T09:56:00.779Z"}
+{"address":"127.0.0.1","code":"ECONNREFUSED","errno":-4078,"level":"error","message":"Redis Client Error: connect ECONNREFUSED 127.0.0.1:6379","port":6379,"service":"twitter-bot","stack":"Error: connect ECONNREFUSED 127.0.0.1:6379\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1615:16)","syscall":"connect","timestamp":"2025-09-04T09:56:00.990Z"}
+{"address":"127.0.0.1","code":"ECONNREFUSED","errno":-4078,"level":"error","message":"Redis Client Error: connect ECONNREFUSED 127.0.0.1:6379","port":6379,"service":"twitter-bot","stack":"Error: connect ECONNREFUSED 127.0.0.1:6379\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1615:16)","syscall":"connect","timestamp":"2025-09-04T09:56:01.200Z"}
+{"address":"127.0.0.1","code":"ECONNREFUSED","errno":-4078,"level":"error","message":"Redis Client Error: connect ECONNREFUSED 127.0.0.1:6379","port":6379,"service":"twitter-bot","stack":"Error: connect ECONNREFUSED 127.0.0.1:6379\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1615:16)","syscall":"connect","timestamp":"2025-09-04T09:56:01.442Z"}
+{"address":"127.0.0.1","code":"ECONNREFUSED","errno":-4078,"level":"error","message":"Redis Client Error: connect ECONNREFUSED 127.0.0.1:6379","port":6379,"service":"twitter-bot","stack":"Error: connect ECONNREFUSED 127.0.0.1:6379\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1615:16)","syscall":"connect","timestamp":"2025-09-04T09:56:01.744Z"}
+{"level":"info","message":"Database cleanup completed","service":"twitter-bot","timestamp":"2025-09-04T09:56:01.826Z"}
+{"address":"127.0.0.1","code":"ECONNREFUSED","errno":-4078,"level":"error","message":"Redis Client Error: connect ECONNREFUSED 127.0.0.1:6379","port":6379,"service":"twitter-bot","stack":"Error: connect ECONNREFUSED 127.0.0.1:6379\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1615:16)","syscall":"connect","timestamp":"2025-09-04T09:56:02.276Z"}
+{"address":"127.0.0.1","code":"ECONNREFUSED","errno":-4078,"level":"error","message":"Redis Client Error: connect ECONNREFUSED 127.0.0.1:6379","port":6379,"service":"twitter-bot","stack":"Error: connect ECONNREFUSED 127.0.0.1:6379\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1615:16)","syscall":"connect","timestamp":"2025-09-04T09:56:03.209Z"}
+{"address":"127.0.0.1","code":"ECONNREFUSED","errno":-4078,"level":"error","message":"Redis Client Error: connect ECONNREFUSED 127.0.0.1:6379","port":6379,"service":"twitter-bot","stack":"Error: connect ECONNREFUSED 127.0.0.1:6379\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1615:16)","syscall":"connect","timestamp":"2025-09-04T09:56:04.850Z"}
+{"address":"127.0.0.1","code":"ECONNREFUSED","errno":-4078,"level":"error","message":"Redis Client Error: connect ECONNREFUSED 127.0.0.1:6379","port":6379,"service":"twitter-bot","stack":"Error: connect ECONNREFUSED 127.0.0.1:6379\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1615:16)","syscall":"connect","timestamp":"2025-09-04T09:56:06.881Z"}
+{"level":"info","message":"Connected to Redis","service":"twitter-bot","timestamp":"2025-09-04T09:56:08.918Z"}
+{"level":"info","limit":17,"message":"Rate limit status updated:","remaining":17,"resetTime":"2025-09-05T00:00:00.000Z","service":"twitter-bot","timestamp":"2025-09-04T09:56:18.892Z"}
+{"level":"info","message":"🚀 Twitter Bot server running on port 8080","service":"twitter-bot","timestamp":"2025-09-04T09:57:29.286Z"}
+{"level":"info","message":"Environment: development","service":"twitter-bot","timestamp":"2025-09-04T09:57:29.292Z"}
+{"level":"info","message":"Mode: PRODUCTION","service":"twitter-bot","timestamp":"2025-09-04T09:57:29.293Z"}
+{"level":"info","message":"Health check: http://localhost:8080/health","service":"twitter-bot","timestamp":"2025-09-04T09:57:29.294Z"}
+{"level":"info","message":"Connected to Redis","service":"twitter-bot","timestamp":"2025-09-04T09:57:29.476Z"}
+{"level":"info","message":"Database cleanup completed","service":"twitter-bot","timestamp":"2025-09-04T09:57:30.096Z"}
+{"level":"info","message":"🚀 Twitter Bot server running on port 8080","service":"twitter-bot","timestamp":"2025-09-04T09:57:34.282Z"}
+{"level":"info","message":"Environment: development","service":"twitter-bot","timestamp":"2025-09-04T09:57:34.286Z"}
+{"level":"info","message":"Mode: PRODUCTION","service":"twitter-bot","timestamp":"2025-09-04T09:57:34.287Z"}
+{"level":"info","message":"Health check: http://localhost:8080/health","service":"twitter-bot","timestamp":"2025-09-04T09:57:34.288Z"}
+{"level":"info","message":"Connected to Redis","service":"twitter-bot","timestamp":"2025-09-04T09:57:34.397Z"}
+{"level":"info","message":"Database cleanup completed","service":"twitter-bot","timestamp":"2025-09-04T09:57:34.882Z"}
+{"level":"info","limit":17,"message":"Rate limit status updated:","remaining":17,"resetTime":"2025-09-05T00:00:00.000Z","service":"twitter-bot","timestamp":"2025-09-04T10:01:18.911Z"}
+{"level":"info","message":"🚀 Twitter Bot server running on port 8080","service":"twitter-bot","timestamp":"2025-09-04T10:01:35.957Z"}
+{"level":"info","message":"Environment: development","service":"twitter-bot","timestamp":"2025-09-04T10:01:35.963Z"}
+{"level":"info","message":"Mode: PRODUCTION","service":"twitter-bot","timestamp":"2025-09-04T10:01:35.964Z"}
+{"level":"info","message":"Health check: http://localhost:8080/health","service":"twitter-bot","timestamp":"2025-09-04T10:01:35.965Z"}
+{"level":"info","message":"Connected to Redis","service":"twitter-bot","timestamp":"2025-09-04T10:01:36.131Z"}
+{"level":"info","message":"Database cleanup completed","service":"twitter-bot","timestamp":"2025-09-04T10:01:36.678Z"}
+{"level":"info","limit":17,"message":"Rate limit status updated:","remaining":17,"resetTime":"2025-09-05T00:00:00.000Z","service":"twitter-bot","timestamp":"2025-09-04T10:01:37.176Z"}
+{"level":"info","limit":17,"message":"Rate limit status updated:","remaining":17,"resetTime":"2025-09-05T00:00:00.000Z","service":"twitter-bot","timestamp":"2025-09-04T10:07:24.010Z"}
+{"level":"info","message":"🚀 Twitter Bot server running on port 8080","service":"twitter-bot","timestamp":"2025-09-04T10:10:43.940Z"}
+{"level":"info","message":"Environment: development","service":"twitter-bot","timestamp":"2025-09-04T10:10:43.950Z"}
+{"level":"info","message":"Mode: PRODUCTION","service":"twitter-bot","timestamp":"2025-09-04T10:10:43.962Z"}
+{"level":"info","message":"Health check: http://localhost:8080/health","service":"twitter-bot","timestamp":"2025-09-04T10:10:43.965Z"}
+{"level":"info","message":"Connected to Redis","service":"twitter-bot","timestamp":"2025-09-04T10:10:44.299Z"}
+{"level":"info","message":"Database cleanup completed","service":"twitter-bot","timestamp":"2025-09-04T10:10:44.612Z"}
+{"level":"info","message":"🚀 Twitter Bot server running on port 8080","service":"twitter-bot","timestamp":"2025-09-04T10:10:51.178Z"}
+{"level":"info","message":"Environment: development","service":"twitter-bot","timestamp":"2025-09-04T10:10:51.182Z"}
+{"level":"info","message":"Mode: PRODUCTION","service":"twitter-bot","timestamp":"2025-09-04T10:10:51.184Z"}
+{"level":"info","message":"Health check: http://localhost:8080/health","service":"twitter-bot","timestamp":"2025-09-04T10:10:51.185Z"}
+{"level":"info","message":"Connected to Redis","service":"twitter-bot","timestamp":"2025-09-04T10:10:51.385Z"}
+{"level":"info","message":"Database cleanup completed","service":"twitter-bot","timestamp":"2025-09-04T10:10:51.718Z"}
+{"level":"info","message":"🚀 Twitter Bot server running on port 8080","service":"twitter-bot","timestamp":"2025-09-04T10:11:01.289Z"}
+{"level":"info","message":"Environment: development","service":"twitter-bot","timestamp":"2025-09-04T10:11:01.293Z"}
+{"level":"info","message":"Mode: PRODUCTION","service":"twitter-bot","timestamp":"2025-09-04T10:11:01.294Z"}
+{"level":"info","message":"Health check: http://localhost:8080/health","service":"twitter-bot","timestamp":"2025-09-04T10:11:01.295Z"}
+{"level":"info","message":"Connected to Redis","service":"twitter-bot","timestamp":"2025-09-04T10:11:01.465Z"}
+{"level":"info","message":"Database cleanup completed","service":"twitter-bot","timestamp":"2025-09-04T10:11:01.960Z"}
+{"level":"info","limit":17,"message":"Rate limit status updated:","remaining":17,"resetTime":"2025-09-05T00:00:00.000Z","service":"twitter-bot","timestamp":"2025-09-04T10:11:02.174Z"}
+{"level":"info","message":"🚀 Twitter Bot server running on port 8080","service":"twitter-bot","timestamp":"2025-09-04T10:11:28.051Z"}
+{"level":"info","message":"Environment: development","service":"twitter-bot","timestamp":"2025-09-04T10:11:28.060Z"}
+{"level":"info","message":"Mode: PRODUCTION","service":"twitter-bot","timestamp":"2025-09-04T10:11:28.066Z"}
+{"level":"info","message":"Health check: http://localhost:8080/health","service":"twitter-bot","timestamp":"2025-09-04T10:11:28.068Z"}
+{"level":"info","message":"Connected to Redis","service":"twitter-bot","timestamp":"2025-09-04T10:11:28.231Z"}
+{"level":"info","message":"Database cleanup completed","service":"twitter-bot","timestamp":"2025-09-04T10:11:28.585Z"}
+{"level":"info","message":"🚀 Twitter Bot server running on port 8080","service":"twitter-bot","timestamp":"2025-09-04T10:11:32.783Z"}
+{"level":"info","message":"Environment: development","service":"twitter-bot","timestamp":"2025-09-04T10:11:32.787Z"}
+{"level":"info","message":"Mode: PRODUCTION","service":"twitter-bot","timestamp":"2025-09-04T10:11:32.788Z"}
+{"level":"info","message":"Health check: http://localhost:8080/health","service":"twitter-bot","timestamp":"2025-09-04T10:11:32.789Z"}
+{"level":"info","message":"Connected to Redis","service":"twitter-bot","timestamp":"2025-09-04T10:11:32.941Z"}
+{"level":"info","message":"Database cleanup completed","service":"twitter-bot","timestamp":"2025-09-04T10:11:33.303Z"}
+{"level":"info","message":"SIGINT received, shutting down gracefully...","service":"twitter-bot","timestamp":"2025-09-04T10:12:55.967Z"}
+{"level":"info","message":"🚀 Twitter Bot server running on port 8080","service":"twitter-bot","timestamp":"2025-09-04T10:13:48.083Z"}
+{"level":"info","message":"Environment: development","service":"twitter-bot","timestamp":"2025-09-04T10:13:48.087Z"}
+{"level":"info","message":"Mode: PRODUCTION","service":"twitter-bot","timestamp":"2025-09-04T10:13:48.088Z"}
+{"level":"info","message":"Health check: http://localhost:8080/health","service":"twitter-bot","timestamp":"2025-09-04T10:13:48.089Z"}
+{"level":"info","message":"Connected to Redis","service":"twitter-bot","timestamp":"2025-09-04T10:13:48.274Z"}
+{"level":"info","message":"Database cleanup completed","service":"twitter-bot","timestamp":"2025-09-04T10:13:48.676Z"}
+{"level":"info","limit":17,"message":"Rate limit status updated:","remaining":17,"resetTime":"2025-09-05T00:00:00.000Z","service":"twitter-bot","timestamp":"2025-09-04T10:13:50.855Z"}
+{"level":"info","limit":17,"message":"Rate limit status updated:","remaining":17,"resetTime":"2025-09-05T00:00:00.000Z","service":"twitter-bot","timestamp":"2025-09-04T10:18:51.230Z"}
+{"level":"info","message":"🚀 Twitter Bot server running on port 8080","service":"twitter-bot","timestamp":"2025-09-04T10:20:05.818Z"}
+{"level":"info","message":"Environment: development","service":"twitter-bot","timestamp":"2025-09-04T10:20:05.829Z"}
+{"level":"info","message":"Mode: PRODUCTION","service":"twitter-bot","timestamp":"2025-09-04T10:20:05.831Z"}
+{"level":"info","message":"Health check: http://localhost:8080/health","service":"twitter-bot","timestamp":"2025-09-04T10:20:05.832Z"}
+{"level":"info","message":"Connected to Redis","service":"twitter-bot","timestamp":"2025-09-04T10:20:06.015Z"}
+{"level":"info","message":"Database cleanup completed","service":"twitter-bot","timestamp":"2025-09-04T10:20:06.877Z"}
+{"level":"info","message":"🚀 Twitter Bot server running on port 8080","service":"twitter-bot","timestamp":"2025-09-04T10:20:12.804Z"}
+{"level":"info","message":"Environment: development","service":"twitter-bot","timestamp":"2025-09-04T10:20:12.809Z"}
+{"level":"info","message":"Mode: PRODUCTION","service":"twitter-bot","timestamp":"2025-09-04T10:20:12.810Z"}
+{"level":"info","message":"Health check: http://localhost:8080/health","service":"twitter-bot","timestamp":"2025-09-04T10:20:12.811Z"}
+{"level":"info","message":"Connected to Redis","service":"twitter-bot","timestamp":"2025-09-04T10:20:12.966Z"}
+{"level":"info","message":"Database cleanup completed","service":"twitter-bot","timestamp":"2025-09-04T10:20:13.490Z"}
+{"level":"info","limit":17,"message":"Rate limit status updated:","remaining":17,"resetTime":"2025-09-05T00:00:00.000Z","service":"twitter-bot","timestamp":"2025-09-04T10:20:19.872Z"}
+{"level":"info","message":"🚀 Twitter Bot server running on port 8080","service":"twitter-bot","timestamp":"2025-09-04T10:20:36.580Z"}
+{"level":"info","message":"Environment: development","service":"twitter-bot","timestamp":"2025-09-04T10:20:36.585Z"}
+{"level":"info","message":"Mode: PRODUCTION","service":"twitter-bot","timestamp":"2025-09-04T10:20:36.589Z"}
+{"level":"info","message":"Health check: http://localhost:8080/health","service":"twitter-bot","timestamp":"2025-09-04T10:20:36.590Z"}
+{"level":"info","message":"Connected to Redis","service":"twitter-bot","timestamp":"2025-09-04T10:20:36.718Z"}
+{"level":"info","message":"Database cleanup completed","service":"twitter-bot","timestamp":"2025-09-04T10:20:37.149Z"}
+{"level":"info","limit":0,"message":"Rate limit status updated:","remaining":0,"resetTime":"2025-09-05T00:00:00.000Z","service":"twitter-bot","timestamp":"2025-09-04T10:20:38.559Z"}
+{"level":"info","message":"🚀 Twitter Bot server running on port 8080","service":"twitter-bot","timestamp":"2025-09-04T10:21:36.414Z"}
+{"level":"info","message":"Environment: development","service":"twitter-bot","timestamp":"2025-09-04T10:21:36.418Z"}
+{"level":"info","message":"Mode: PRODUCTION","service":"twitter-bot","timestamp":"2025-09-04T10:21:36.424Z"}
+{"level":"info","message":"Health check: http://localhost:8080/health","service":"twitter-bot","timestamp":"2025-09-04T10:21:36.426Z"}
+{"level":"info","message":"Connected to Redis","service":"twitter-bot","timestamp":"2025-09-04T10:21:36.693Z"}
+{"level":"info","message":"Database cleanup completed","service":"twitter-bot","timestamp":"2025-09-04T10:21:37.548Z"}
+{"level":"info","message":"🚀 Twitter Bot server running on port 8080","service":"twitter-bot","timestamp":"2025-09-04T10:21:41.642Z"}
+{"level":"info","message":"Environment: development","service":"twitter-bot","timestamp":"2025-09-04T10:21:41.649Z"}
+{"level":"info","message":"Mode: PRODUCTION","service":"twitter-bot","timestamp":"2025-09-04T10:21:41.655Z"}
+{"level":"info","message":"Health check: http://localhost:8080/health","service":"twitter-bot","timestamp":"2025-09-04T10:21:41.656Z"}
+{"level":"info","message":"Connected to Redis","service":"twitter-bot","timestamp":"2025-09-04T10:21:41.787Z"}
+{"level":"info","message":"Database cleanup completed","service":"twitter-bot","timestamp":"2025-09-04T10:21:42.026Z"}
+{"level":"info","message":"🚀 Twitter Bot server running on port 8080","service":"twitter-bot","timestamp":"2025-09-04T10:21:49.453Z"}
+{"level":"info","message":"Environment: development","service":"twitter-bot","timestamp":"2025-09-04T10:21:49.458Z"}
+{"level":"info","message":"Mode: PRODUCTION","service":"twitter-bot","timestamp":"2025-09-04T10:21:49.459Z"}
+{"level":"info","message":"Health check: http://localhost:8080/health","service":"twitter-bot","timestamp":"2025-09-04T10:21:49.460Z"}
+{"level":"info","message":"Connected to Redis","service":"twitter-bot","timestamp":"2025-09-04T10:21:49.675Z"}
+{"level":"info","message":"Database cleanup completed","service":"twitter-bot","timestamp":"2025-09-04T10:21:50.204Z"}
+{"level":"info","message":"🚀 Twitter Bot server running on port 8080","service":"twitter-bot","timestamp":"2025-09-04T10:24:12.815Z"}
+{"level":"info","message":"Environment: development","service":"twitter-bot","timestamp":"2025-09-04T10:24:12.821Z"}
+{"level":"info","message":"Mode: PRODUCTION","service":"twitter-bot","timestamp":"2025-09-04T10:24:12.822Z"}
+{"level":"info","message":"Health check: http://localhost:8080/health","service":"twitter-bot","timestamp":"2025-09-04T10:24:12.823Z"}
+{"level":"info","message":"Connected to Redis","service":"twitter-bot","timestamp":"2025-09-04T10:24:12.969Z"}
+{"level":"info","message":"Database cleanup completed","service":"twitter-bot","timestamp":"2025-09-04T10:24:13.340Z"}
+{"level":"info","limit":0,"message":"Rate limit status updated:","remaining":0,"resetTime":"2025-09-05T00:00:00.000Z","service":"twitter-bot","timestamp":"2025-09-04T10:27:49.277Z"}
+{"level":"info","message":"🚀 Twitter Bot server running on port 8080","service":"twitter-bot","timestamp":"2025-09-04T10:27:58.365Z"}
+{"level":"info","message":"Environment: development","service":"twitter-bot","timestamp":"2025-09-04T10:27:58.373Z"}
+{"level":"info","message":"Mode: PRODUCTION","service":"twitter-bot","timestamp":"2025-09-04T10:27:58.375Z"}
+{"level":"info","message":"Health check: http://localhost:8080/health","service":"twitter-bot","timestamp":"2025-09-04T10:27:58.376Z"}
+{"level":"info","message":"Connected to Redis","service":"twitter-bot","timestamp":"2025-09-04T10:27:58.550Z"}
+{"level":"info","message":"Database cleanup completed","service":"twitter-bot","timestamp":"2025-09-04T10:27:59.136Z"}
+{"level":"info","message":"🚀 Twitter Bot server running on port 8080","service":"twitter-bot","timestamp":"2025-09-04T10:28:05.876Z"}
+{"level":"info","message":"Environment: development","service":"twitter-bot","timestamp":"2025-09-04T10:28:05.882Z"}
+{"level":"info","message":"Mode: PRODUCTION","service":"twitter-bot","timestamp":"2025-09-04T10:28:05.883Z"}
+{"level":"info","message":"Health check: http://localhost:8080/health","service":"twitter-bot","timestamp":"2025-09-04T10:28:05.884Z"}
+{"level":"info","message":"Connected to Redis","service":"twitter-bot","timestamp":"2025-09-04T10:28:06.121Z"}
+{"level":"info","message":"Database cleanup completed","service":"twitter-bot","timestamp":"2025-09-04T10:28:06.558Z"}
+{"level":"info","message":"🚀 Twitter Bot server running on port 8080","service":"twitter-bot","timestamp":"2025-09-04T10:29:13.241Z"}
+{"level":"info","message":"Environment: development","service":"twitter-bot","timestamp":"2025-09-04T10:29:13.247Z"}
+{"level":"info","message":"Mode: PRODUCTION","service":"twitter-bot","timestamp":"2025-09-04T10:29:13.248Z"}
+{"level":"info","message":"Health check: http://localhost:8080/health","service":"twitter-bot","timestamp":"2025-09-04T10:29:13.249Z"}
+{"level":"info","message":"Connected to Redis","service":"twitter-bot","timestamp":"2025-09-04T10:29:13.381Z"}
+{"level":"info","message":"Database cleanup completed","service":"twitter-bot","timestamp":"2025-09-04T10:29:13.979Z"}
+{"level":"info","message":"🚀 Twitter Bot server running on port 8080","service":"twitter-bot","timestamp":"2025-09-04T10:29:21.790Z"}
+{"level":"info","message":"Environment: development","service":"twitter-bot","timestamp":"2025-09-04T10:29:21.794Z"}
+{"level":"info","message":"Mode: PRODUCTION","service":"twitter-bot","timestamp":"2025-09-04T10:29:21.795Z"}
+{"level":"info","message":"Health check: http://localhost:8080/health","service":"twitter-bot","timestamp":"2025-09-04T10:29:21.795Z"}
+{"level":"info","message":"Connected to Redis","service":"twitter-bot","timestamp":"2025-09-04T10:29:21.933Z"}
+{"level":"info","message":"Database cleanup completed","service":"twitter-bot","timestamp":"2025-09-04T10:29:22.541Z"}
+{"level":"info","limit":0,"message":"Rate limit status updated:","remaining":0,"resetTime":"2025-09-05T00:00:00.000Z","service":"twitter-bot","timestamp":"2025-09-04T10:29:41.642Z"}
+{"level":"info","message":"🚀 Twitter Bot server running on port 8080","service":"twitter-bot","timestamp":"2025-09-04T10:29:52.641Z"}
+{"level":"info","message":"Environment: development","service":"twitter-bot","timestamp":"2025-09-04T10:29:52.644Z"}
+{"level":"info","message":"Mode: PRODUCTION","service":"twitter-bot","timestamp":"2025-09-04T10:29:52.645Z"}
+{"level":"info","message":"Health check: http://localhost:8080/health","service":"twitter-bot","timestamp":"2025-09-04T10:29:52.646Z"}
+{"level":"info","message":"Connected to Redis","service":"twitter-bot","timestamp":"2025-09-04T10:29:52.942Z"}
+{"level":"info","message":"Database cleanup completed","service":"twitter-bot","timestamp":"2025-09-04T10:29:53.447Z"}
+{"level":"info","limit":1,"message":"Rate limit status updated:","remaining":1,"resetTime":"2025-09-05T00:00:00.000Z","service":"twitter-bot","timestamp":"2025-09-04T10:29:55.134Z"}
+{"level":"info","message":"🚀 Twitter Bot server running on port 8080","service":"twitter-bot","timestamp":"2025-09-04T10:30:12.962Z"}
+{"level":"info","message":"Environment: development","service":"twitter-bot","timestamp":"2025-09-04T10:30:12.965Z"}
+{"level":"info","message":"Mode: PRODUCTION","service":"twitter-bot","timestamp":"2025-09-04T10:30:12.966Z"}
+{"level":"info","message":"Health check: http://localhost:8080/health","service":"twitter-bot","timestamp":"2025-09-04T10:30:12.967Z"}
+{"level":"info","message":"Connected to Redis","service":"twitter-bot","timestamp":"2025-09-04T10:30:13.127Z"}
+{"level":"info","message":"Database cleanup completed","service":"twitter-bot","timestamp":"2025-09-04T10:30:13.588Z"}
+{"level":"info","limit":17,"message":"Rate limit status updated:","remaining":17,"resetTime":"2025-09-05T00:00:00.000Z","service":"twitter-bot","timestamp":"2025-09-04T10:30:14.224Z"}
+{"level":"info","message":"🚀 Twitter Bot server running on port 8080","service":"twitter-bot","timestamp":"2025-09-04T10:32:44.875Z"}
+{"level":"info","message":"Environment: development","service":"twitter-bot","timestamp":"2025-09-04T10:32:44.884Z"}
+{"level":"info","message":"Mode: PRODUCTION","service":"twitter-bot","timestamp":"2025-09-04T10:32:44.886Z"}
+{"level":"info","message":"Health check: http://localhost:8080/health","service":"twitter-bot","timestamp":"2025-09-04T10:32:44.889Z"}
+{"level":"info","message":"Connected to Redis","service":"twitter-bot","timestamp":"2025-09-04T10:32:45.032Z"}
+{"level":"info","message":"Database cleanup completed","service":"twitter-bot","timestamp":"2025-09-04T10:32:45.564Z"}
+{"level":"info","message":"🚀 Twitter Bot server running on port 8080","service":"twitter-bot","timestamp":"2025-09-04T10:32:53.589Z"}
+{"level":"info","message":"Environment: development","service":"twitter-bot","timestamp":"2025-09-04T10:32:53.595Z"}
+{"level":"info","message":"Mode: PRODUCTION","service":"twitter-bot","timestamp":"2025-09-04T10:32:53.599Z"}
+{"level":"info","message":"Health check: http://localhost:8080/health","service":"twitter-bot","timestamp":"2025-09-04T10:32:53.603Z"}
+{"level":"info","message":"Connected to Redis","service":"twitter-bot","timestamp":"2025-09-04T10:32:53.984Z"}
+{"level":"info","message":"🚀 Twitter Bot server running on port 8080","service":"twitter-bot","timestamp":"2025-09-04T10:32:57.103Z"}
+{"level":"info","message":"Environment: development","service":"twitter-bot","timestamp":"2025-09-04T10:32:57.106Z"}
+{"level":"info","message":"Mode: PRODUCTION","service":"twitter-bot","timestamp":"2025-09-04T10:32:57.107Z"}
+{"level":"info","message":"Health check: http://localhost:8080/health","service":"twitter-bot","timestamp":"2025-09-04T10:32:57.107Z"}
+{"level":"info","message":"Connected to Redis","service":"twitter-bot","timestamp":"2025-09-04T10:32:57.230Z"}
+{"level":"info","message":"Database cleanup completed","service":"twitter-bot","timestamp":"2025-09-04T10:32:57.701Z"}
+{"level":"info","limit":17,"message":"Rate limit status updated:","remaining":17,"resetTime":"2025-09-05T00:00:00.000Z","service":"twitter-bot","timestamp":"2025-09-04T10:35:15.250Z"}
+{"level":"info","limit":17,"message":"Rate limit status updated:","remaining":17,"resetTime":"2025-09-05T00:00:00.000Z","service":"twitter-bot","timestamp":"2025-09-04T10:45:15.247Z"}
+{"level":"info","message":"🚀 Twitter Bot server running on port 8080","service":"twitter-bot","timestamp":"2025-09-04T10:48:40.223Z"}
+{"level":"info","message":"Environment: development","service":"twitter-bot","timestamp":"2025-09-04T10:48:40.228Z"}
+{"level":"info","message":"Mode: PRODUCTION","service":"twitter-bot","timestamp":"2025-09-04T10:48:40.230Z"}
+{"level":"info","message":"Health check: http://localhost:8080/health","service":"twitter-bot","timestamp":"2025-09-04T10:48:40.230Z"}
+{"level":"info","message":"Connected to Redis","service":"twitter-bot","timestamp":"2025-09-04T10:48:40.388Z"}
+{"level":"info","message":"Database cleanup completed","service":"twitter-bot","timestamp":"2025-09-04T10:48:40.979Z"}
+{"level":"info","limit":17,"message":"Rate limit status updated:","remaining":17,"resetTime":"2025-09-05T00:00:00.000Z","service":"twitter-bot","timestamp":"2025-09-04T10:50:15.265Z"}
+{"level":"info","message":"🚀 Twitter Bot server running on port 8080","service":"twitter-bot","timestamp":"2025-09-04T10:50:32.706Z"}
+{"level":"info","message":"Environment: development","service":"twitter-bot","timestamp":"2025-09-04T10:50:32.709Z"}
+{"level":"info","message":"Mode: PRODUCTION","service":"twitter-bot","timestamp":"2025-09-04T10:50:32.710Z"}
+{"level":"info","message":"Health check: http://localhost:8080/health","service":"twitter-bot","timestamp":"2025-09-04T10:50:32.710Z"}
+{"level":"info","message":"Connected to Redis","service":"twitter-bot","timestamp":"2025-09-04T10:50:32.828Z"}
+{"level":"info","message":"Database cleanup completed","service":"twitter-bot","timestamp":"2025-09-04T10:50:33.358Z"}
+{"level":"info","message":"🚀 Twitter Bot server running on port 8080","service":"twitter-bot","timestamp":"2025-09-04T10:50:50.389Z"}
+{"level":"info","message":"Environment: development","service":"twitter-bot","timestamp":"2025-09-04T10:50:50.392Z"}
+{"level":"info","message":"Mode: PRODUCTION","service":"twitter-bot","timestamp":"2025-09-04T10:50:50.392Z"}
+{"level":"info","message":"Health check: http://localhost:8080/health","service":"twitter-bot","timestamp":"2025-09-04T10:50:50.393Z"}
+{"level":"info","message":"Connected to Redis","service":"twitter-bot","timestamp":"2025-09-04T10:50:50.525Z"}
+{"level":"info","message":"Database cleanup completed","service":"twitter-bot","timestamp":"2025-09-04T10:50:51.128Z"}
+{"level":"info","message":"🚀 Twitter Bot server running on port 8080","service":"twitter-bot","timestamp":"2025-09-04T10:52:18.284Z"}
+{"level":"info","message":"Environment: development","service":"twitter-bot","timestamp":"2025-09-04T10:52:18.287Z"}
+{"level":"info","message":"Mode: PRODUCTION","service":"twitter-bot","timestamp":"2025-09-04T10:52:18.288Z"}
+{"level":"info","message":"Health check: http://localhost:8080/health","service":"twitter-bot","timestamp":"2025-09-04T10:52:18.288Z"}
+{"level":"info","message":"Connected to Redis","service":"twitter-bot","timestamp":"2025-09-04T10:52:18.409Z"}
+{"level":"info","message":"Database cleanup completed","service":"twitter-bot","timestamp":"2025-09-04T10:52:19.071Z"}
+{"level":"info","message":"🚀 Twitter Bot server running on port 8080","service":"twitter-bot","timestamp":"2025-09-04T10:53:33.218Z"}
+{"level":"info","message":"Environment: development","service":"twitter-bot","timestamp":"2025-09-04T10:53:33.227Z"}
+{"level":"info","message":"Mode: PRODUCTION","service":"twitter-bot","timestamp":"2025-09-04T10:53:33.230Z"}
+{"level":"info","message":"Health check: http://localhost:8080/health","service":"twitter-bot","timestamp":"2025-09-04T10:53:33.231Z"}
+{"level":"info","message":"✅ Connected to Redis","service":"twitter-bot","timestamp":"2025-09-04T10:53:33.405Z"}
+{"level":"info","message":"Database cleanup completed","service":"twitter-bot","timestamp":"2025-09-04T10:53:33.969Z"}
+{"level":"info","message":"🚀 Twitter Bot server running on port 8080","service":"twitter-bot","timestamp":"2025-09-04T10:55:03.941Z"}
+{"level":"info","message":"Environment: development","service":"twitter-bot","timestamp":"2025-09-04T10:55:03.944Z"}
+{"level":"info","message":"Mode: PRODUCTION","service":"twitter-bot","timestamp":"2025-09-04T10:55:03.945Z"}
+{"level":"info","message":"Health check: http://localhost:8080/health","service":"twitter-bot","timestamp":"2025-09-04T10:55:03.946Z"}
+{"level":"info","message":"Database cleanup completed","service":"twitter-bot","timestamp":"2025-09-04T10:55:04.429Z"}
+{"code":"ETIMEDOUT","errorno":"ETIMEDOUT","level":"error","message":"Redis Client Error: connect ETIMEDOUT","service":"twitter-bot","stack":"Error: connect ETIMEDOUT\n    at Socket.<anonymous> (S:\\X_automation - Copy\\node_modules\\ioredis\\built\\Redis.js:171:41)\n    at Object.onceWrapper (node:events:638:28)\n    at Socket.emit (node:events:524:28)\n    at Socket._onTimeout (node:net:602:8)\n    at listOnTimeout (node:internal/timers:594:17)\n    at process.processTimers (node:internal/timers:529:7)","syscall":"connect","timestamp":"2025-09-04T10:55:14.080Z"}
+{"code":"ETIMEDOUT","errorno":"ETIMEDOUT","level":"error","message":"Redis Client Error: connect ETIMEDOUT","service":"twitter-bot","stack":"Error: connect ETIMEDOUT\n    at Socket.<anonymous> (S:\\X_automation - Copy\\node_modules\\ioredis\\built\\Redis.js:171:41)\n    at Object.onceWrapper (node:events:638:28)\n    at Socket.emit (node:events:524:28)\n    at Socket._onTimeout (node:net:602:8)\n    at listOnTimeout (node:internal/timers:594:17)\n    at process.processTimers (node:internal/timers:529:7)","syscall":"connect","timestamp":"2025-09-04T10:55:24.148Z"}
+{"code":"ETIMEDOUT","errorno":"ETIMEDOUT","level":"error","message":"Redis Client Error: connect ETIMEDOUT","service":"twitter-bot","stack":"Error: connect ETIMEDOUT\n    at Socket.<anonymous> (S:\\X_automation - Copy\\node_modules\\ioredis\\built\\Redis.js:171:41)\n    at Object.onceWrapper (node:events:638:28)\n    at Socket.emit (node:events:524:28)\n    at Socket._onTimeout (node:net:602:8)\n    at listOnTimeout (node:internal/timers:594:17)\n    at process.processTimers (node:internal/timers:529:7)","syscall":"connect","timestamp":"2025-09-04T10:55:34.287Z"}
+{"code":"ETIMEDOUT","errorno":"ETIMEDOUT","level":"error","message":"Redis Client Error: connect ETIMEDOUT","service":"twitter-bot","stack":"Error: connect ETIMEDOUT\n    at Socket.<anonymous> (S:\\X_automation - Copy\\node_modules\\ioredis\\built\\Redis.js:171:41)\n    at Object.onceWrapper (node:events:638:28)\n    at Socket.emit (node:events:524:28)\n    at Socket._onTimeout (node:net:602:8)\n    at listOnTimeout (node:internal/timers:594:17)\n    at process.processTimers (node:internal/timers:529:7)","syscall":"connect","timestamp":"2025-09-04T10:55:44.457Z"}
+{"code":"ETIMEDOUT","errorno":"ETIMEDOUT","level":"error","message":"Redis Client Error: connect ETIMEDOUT","service":"twitter-bot","stack":"Error: connect ETIMEDOUT\n    at Socket.<anonymous> (S:\\X_automation - Copy\\node_modules\\ioredis\\built\\Redis.js:171:41)\n    at Object.onceWrapper (node:events:638:28)\n    at Socket.emit (node:events:524:28)\n    at Socket._onTimeout (node:net:602:8)\n    at listOnTimeout (node:internal/timers:594:17)\n    at process.processTimers (node:internal/timers:529:7)","syscall":"connect","timestamp":"2025-09-04T10:55:54.678Z"}
+{"code":"ETIMEDOUT","errorno":"ETIMEDOUT","level":"error","message":"Redis Client Error: connect ETIMEDOUT","service":"twitter-bot","stack":"Error: connect ETIMEDOUT\n    at Socket.<anonymous> (S:\\X_automation - Copy\\node_modules\\ioredis\\built\\Redis.js:171:41)\n    at Object.onceWrapper (node:events:638:28)\n    at Socket.emit (node:events:524:28)\n    at Socket._onTimeout (node:net:602:8)\n    at listOnTimeout (node:internal/timers:594:17)\n    at process.processTimers (node:internal/timers:529:7)","syscall":"connect","timestamp":"2025-09-04T10:56:04.955Z"}
+{"code":"ETIMEDOUT","errorno":"ETIMEDOUT","level":"error","message":"Redis Client Error: connect ETIMEDOUT","service":"twitter-bot","stack":"Error: connect ETIMEDOUT\n    at Socket.<anonymous> (S:\\X_automation - Copy\\node_modules\\ioredis\\built\\Redis.js:171:41)\n    at Object.onceWrapper (node:events:638:28)\n    at Socket.emit (node:events:524:28)\n    at Socket._onTimeout (node:net:602:8)\n    at listOnTimeout (node:internal/timers:594:17)\n    at process.processTimers (node:internal/timers:529:7)","syscall":"connect","timestamp":"2025-09-04T10:56:15.277Z"}
+{"code":"ETIMEDOUT","errorno":"ETIMEDOUT","level":"error","message":"Redis Client Error: connect ETIMEDOUT","service":"twitter-bot","stack":"Error: connect ETIMEDOUT\n    at Socket.<anonymous> (S:\\X_automation - Copy\\node_modules\\ioredis\\built\\Redis.js:171:41)\n    at Object.onceWrapper (node:events:638:28)\n    at Socket.emit (node:events:524:28)\n    at Socket._onTimeout (node:net:602:8)\n    at listOnTimeout (node:internal/timers:594:17)\n    at process.processTimers (node:internal/timers:529:7)","syscall":"connect","timestamp":"2025-09-04T10:56:25.665Z"}
+{"code":"ETIMEDOUT","errorno":"ETIMEDOUT","level":"error","message":"Redis Client Error: connect ETIMEDOUT","service":"twitter-bot","stack":"Error: connect ETIMEDOUT\n    at Socket.<anonymous> (S:\\X_automation - Copy\\node_modules\\ioredis\\built\\Redis.js:171:41)\n    at Object.onceWrapper (node:events:638:28)\n    at Socket.emit (node:events:524:28)\n    at Socket._onTimeout (node:net:602:8)\n    at listOnTimeout (node:internal/timers:594:17)\n    at process.processTimers (node:internal/timers:529:7)","syscall":"connect","timestamp":"2025-09-04T10:56:36.087Z"}
+{"code":"ETIMEDOUT","errorno":"ETIMEDOUT","level":"error","message":"Redis Client Error: connect ETIMEDOUT","service":"twitter-bot","stack":"Error: connect ETIMEDOUT\n    at Socket.<anonymous> (S:\\X_automation - Copy\\node_modules\\ioredis\\built\\Redis.js:171:41)\n    at Object.onceWrapper (node:events:638:28)\n    at Socket.emit (node:events:524:28)\n    at Socket._onTimeout (node:net:602:8)\n    at listOnTimeout (node:internal/timers:594:17)\n    at process.processTimers (node:internal/timers:529:7)","syscall":"connect","timestamp":"2025-09-04T10:56:46.558Z"}
+{"code":"ETIMEDOUT","errorno":"ETIMEDOUT","level":"error","message":"Redis Client Error: connect ETIMEDOUT","service":"twitter-bot","stack":"Error: connect ETIMEDOUT\n    at Socket.<anonymous> (S:\\X_automation - Copy\\node_modules\\ioredis\\built\\Redis.js:171:41)\n    at Object.onceWrapper (node:events:638:28)\n    at Socket.emit (node:events:524:28)\n    at Socket._onTimeout (node:net:602:8)\n    at listOnTimeout (node:internal/timers:594:17)\n    at process.processTimers (node:internal/timers:529:7)","syscall":"connect","timestamp":"2025-09-04T10:56:57.095Z"}
+{"code":"ETIMEDOUT","errorno":"ETIMEDOUT","level":"error","message":"Redis Client Error: connect ETIMEDOUT","service":"twitter-bot","stack":"Error: connect ETIMEDOUT\n    at Socket.<anonymous> (S:\\X_automation - Copy\\node_modules\\ioredis\\built\\Redis.js:171:41)\n    at Object.onceWrapper (node:events:638:28)\n    at Socket.emit (node:events:524:28)\n    at Socket._onTimeout (node:net:602:8)\n    at listOnTimeout (node:internal/timers:594:17)\n    at process.processTimers (node:internal/timers:529:7)","syscall":"connect","timestamp":"2025-09-04T10:57:07.664Z"}
+{"code":"ETIMEDOUT","errorno":"ETIMEDOUT","level":"error","message":"Redis Client Error: connect ETIMEDOUT","service":"twitter-bot","stack":"Error: connect ETIMEDOUT\n    at Socket.<anonymous> (S:\\X_automation - Copy\\node_modules\\ioredis\\built\\Redis.js:171:41)\n    at Object.onceWrapper (node:events:638:28)\n    at Socket.emit (node:events:524:28)\n    at Socket._onTimeout (node:net:602:8)\n    at listOnTimeout (node:internal/timers:594:17)\n    at process.processTimers (node:internal/timers:529:7)","syscall":"connect","timestamp":"2025-09-04T10:57:18.285Z"}
+{"level":"info","message":"🚀 Twitter Bot server running on port 8080","service":"twitter-bot","timestamp":"2025-09-04T10:57:27.690Z"}
+{"level":"info","message":"Environment: development","service":"twitter-bot","timestamp":"2025-09-04T10:57:27.695Z"}
+{"level":"info","message":"Mode: PRODUCTION","service":"twitter-bot","timestamp":"2025-09-04T10:57:27.696Z"}
+{"level":"info","message":"Health check: http://localhost:8080/health","service":"twitter-bot","timestamp":"2025-09-04T10:57:27.697Z"}
+{"level":"info","message":"Database cleanup completed","service":"twitter-bot","timestamp":"2025-09-04T10:57:28.298Z"}
+{"code":"ETIMEDOUT","errorno":"ETIMEDOUT","level":"error","message":"Redis Client Error: connect ETIMEDOUT","service":"twitter-bot","stack":"Error: connect ETIMEDOUT\n    at Socket.<anonymous> (S:\\X_automation - Copy\\node_modules\\ioredis\\built\\Redis.js:171:41)\n    at Object.onceWrapper (node:events:638:28)\n    at Socket.emit (node:events:524:28)\n    at Socket._onTimeout (node:net:602:8)\n    at listOnTimeout (node:internal/timers:594:17)\n    at process.processTimers (node:internal/timers:529:7)","syscall":"connect","timestamp":"2025-09-04T10:57:37.778Z"}
+{"code":"ETIMEDOUT","errorno":"ETIMEDOUT","level":"error","message":"Redis Client Error: connect ETIMEDOUT","service":"twitter-bot","stack":"Error: connect ETIMEDOUT\n    at Socket.<anonymous> (S:\\X_automation - Copy\\node_modules\\ioredis\\built\\Redis.js:171:41)\n    at Object.onceWrapper (node:events:638:28)\n    at Socket.emit (node:events:524:28)\n    at Socket._onTimeout (node:net:602:8)\n    at listOnTimeout (node:internal/timers:594:17)\n    at process.processTimers (node:internal/timers:529:7)","syscall":"connect","timestamp":"2025-09-04T10:57:47.854Z"}
+{"code":"ETIMEDOUT","errorno":"ETIMEDOUT","level":"error","message":"Redis Client Error: connect ETIMEDOUT","service":"twitter-bot","stack":"Error: connect ETIMEDOUT\n    at Socket.<anonymous> (S:\\X_automation - Copy\\node_modules\\ioredis\\built\\Redis.js:171:41)\n    at Object.onceWrapper (node:events:638:28)\n    at Socket.emit (node:events:524:28)\n    at Socket._onTimeout (node:net:602:8)\n    at listOnTimeout (node:internal/timers:594:17)\n    at process.processTimers (node:internal/timers:529:7)","syscall":"connect","timestamp":"2025-09-04T10:57:58.003Z"}
+{"level":"info","message":"SIGINT received, shutting down gracefully...","service":"twitter-bot","timestamp":"2025-09-04T10:57:58.323Z"}
+{"level":"info","message":"Shutting down tweet processor...","service":"twitter-bot","timestamp":"2025-09-04T10:57:58.326Z"}
+{"level":"info","message":"🚀 Twitter Bot server running on port 8080","service":"twitter-bot","timestamp":"2025-09-04T11:00:58.882Z"}
+{"level":"info","message":"Environment: development","service":"twitter-bot","timestamp":"2025-09-04T11:00:58.889Z"}
+{"level":"info","message":"Mode: PRODUCTION","service":"twitter-bot","timestamp":"2025-09-04T11:00:58.890Z"}
+{"level":"info","message":"Health check: http://localhost:8080/health","service":"twitter-bot","timestamp":"2025-09-04T11:00:58.891Z"}
+{"level":"info","message":"✅ Connected to Redis","service":"twitter-bot","timestamp":"2025-09-04T11:00:59.199Z"}
+{"level":"info","message":"Database cleanup completed","service":"twitter-bot","timestamp":"2025-09-04T11:01:00.288Z"}
+{"level":"info","limit":17,"message":"Rate limit status updated:","remaining":17,"resetTime":"2025-09-05T00:00:00.000Z","service":"twitter-bot","timestamp":"2025-09-04T11:01:20.758Z"}
+{"level":"info","message":"Scheduled tweet created:","service":"twitter-bot","timestamp":"2025-09-04T11:01:42.756Z"}
+{"level":"info","message":"SIGINT received, shutting down gracefully...","service":"twitter-bot","timestamp":"2025-09-04T11:04:50.764Z"}
+{"level":"info","message":"🚀 Twitter Bot server running on port 8080","service":"twitter-bot","timestamp":"2025-09-04T11:04:57.413Z"}
+{"level":"info","message":"Environment: development","service":"twitter-bot","timestamp":"2025-09-04T11:04:57.417Z"}
+{"level":"info","message":"Mode: PRODUCTION","service":"twitter-bot","timestamp":"2025-09-04T11:04:57.419Z"}
+{"level":"info","message":"Health check: http://localhost:8080/health","service":"twitter-bot","timestamp":"2025-09-04T11:04:57.420Z"}
+{"level":"info","message":"✅ Connected to Redis","service":"twitter-bot","timestamp":"2025-09-04T11:04:57.692Z"}
+{"level":"info","message":"Database cleanup completed","service":"twitter-bot","timestamp":"2025-09-04T11:04:58.311Z"}
+{"level":"error","message":"AI tweet generation failed:","service":"twitter-bot","timestamp":"2025-09-04T11:05:02.170Z"}
+{"length":133,"level":"info","message":"AI tweet generated successfully:","prompt":"Hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii...","service":"twitter-bot","timestamp":"2025-09-04T11:05:10.078Z"}
+{"level":"info","limit":17,"message":"Rate limit status updated:","remaining":17,"resetTime":"2025-09-05T00:00:00.000Z","service":"twitter-bot","timestamp":"2025-09-04T11:05:18.021Z"}
+{"level":"info","message":"SIGINT received, shutting down gracefully...","service":"twitter-bot","timestamp":"2025-09-04T11:06:13.754Z"}
+{"level":"info","message":"🚀 Twitter Bot server running on port 8080","service":"twitter-bot","timestamp":"2025-09-04T11:06:18.497Z"}
+{"level":"info","message":"Environment: development","service":"twitter-bot","timestamp":"2025-09-04T11:06:18.500Z"}
+{"level":"info","message":"Mode: PRODUCTION","service":"twitter-bot","timestamp":"2025-09-04T11:06:18.502Z"}
+{"level":"info","message":"Health check: http://localhost:8080/health","service":"twitter-bot","timestamp":"2025-09-04T11:06:18.502Z"}
+{"level":"info","message":"✅ Connected to Redis","service":"twitter-bot","timestamp":"2025-09-04T11:06:18.824Z"}
+{"level":"info","message":"Database cleanup completed","service":"twitter-bot","timestamp":"2025-09-04T11:06:19.075Z"}
+{"level":"info","limit":17,"message":"Rate limit status updated:","remaining":17,"resetTime":"2025-09-05T00:00:00.000Z","service":"twitter-bot","timestamp":"2025-09-04T11:06:24.888Z"}
+{"level":"info","message":"SIGINT received, shutting down gracefully...","service":"twitter-bot","timestamp":"2025-09-04T11:08:00.166Z"}
+{"level":"info","message":"🚀 Twitter Bot server running on port 8080","service":"twitter-bot","timestamp":"2025-09-04T11:08:40.927Z"}
+{"level":"info","message":"Environment: development","service":"twitter-bot","timestamp":"2025-09-04T11:08:40.931Z"}
+{"level":"info","message":"Mode: PRODUCTION","service":"twitter-bot","timestamp":"2025-09-04T11:08:40.932Z"}
+{"level":"info","message":"Health check: http://localhost:8080/health","service":"twitter-bot","timestamp":"2025-09-04T11:08:40.933Z"}
+{"level":"info","message":"✅ Connected to Redis","service":"twitter-bot","timestamp":"2025-09-04T11:08:41.115Z"}
+{"level":"info","message":"Database cleanup completed","service":"twitter-bot","timestamp":"2025-09-04T11:08:41.572Z"}
+{"level":"info","limit":17,"message":"Rate limit status updated:","remaining":17,"resetTime":"2025-09-05T00:00:00.000Z","service":"twitter-bot","timestamp":"2025-09-04T11:08:45.551Z"}
+{"level":"info","message":"Added tweet job to queue: 1","service":"twitter-bot","timestamp":"2025-09-04T11:08:45.565Z"}
+{"imageFile":null,"level":"info","message":"Processing immediate tweet job: 1","service":"twitter-bot","text":"HI","timestamp":"2025-09-04T11:08:45.644Z"}
+{"level":"error","message":"Failed to post tweet:","service":"twitter-bot","timestamp":"2025-09-04T11:08:46.266Z"}
+{"code":429,"keys":["error","type","code","headers","rateLimit","data"],"level":"error","message":"Error details: Request failed with code 429","service":"twitter-bot","timestamp":"2025-09-04T11:08:46.268Z","type":"object"}
+{"level":"info","limit":17,"message":"Rate limit status updated:","remaining":17,"resetTime":"2025-09-05T00:00:00.000Z","service":"twitter-bot","timestamp":"2025-09-04T11:08:46.272Z"}
+{"level":"error","message":"Tweet job 1 failed:","service":"twitter-bot","timestamp":"2025-09-04T11:08:46.273Z"}
+{"level":"info","message":"Skipping database save for configuration error:","service":"twitter-bot","timestamp":"2025-09-04T11:08:46.273Z"}
+{"level":"error","message":"Tweet job 1 failed:","service":"twitter-bot","timestamp":"2025-09-04T11:08:46.285Z"}
+{"imageFile":null,"level":"info","message":"Processing immediate tweet job: 1","service":"twitter-bot","text":"HI","timestamp":"2025-09-04T11:08:48.296Z"}
+{"level":"error","message":"Failed to post tweet:","service":"twitter-bot","timestamp":"2025-09-04T11:08:48.578Z"}
+{"code":429,"keys":["error","type","code","headers","rateLimit","data"],"level":"error","message":"Error details: Request failed with code 429","service":"twitter-bot","timestamp":"2025-09-04T11:08:48.579Z","type":"object"}
+{"level":"info","limit":17,"message":"Rate limit status updated:","remaining":17,"resetTime":"2025-09-05T00:00:00.000Z","service":"twitter-bot","timestamp":"2025-09-04T11:08:48.580Z"}
+{"level":"error","message":"Tweet job 1 failed:","service":"twitter-bot","timestamp":"2025-09-04T11:08:48.581Z"}
+{"level":"info","message":"Skipping database save for configuration error:","service":"twitter-bot","timestamp":"2025-09-04T11:08:48.582Z"}
+{"level":"error","message":"Tweet job 1 failed:","service":"twitter-bot","timestamp":"2025-09-04T11:08:48.587Z"}
+{"imageFile":null,"level":"info","message":"Processing immediate tweet job: 1","service":"twitter-bot","text":"HI","timestamp":"2025-09-04T11:08:54.600Z"}
+{"level":"error","message":"Failed to post tweet:","service":"twitter-bot","timestamp":"2025-09-04T11:08:55.013Z"}
+{"code":429,"keys":["error","type","code","headers","rateLimit","data"],"level":"error","message":"Error details: Request failed with code 429","service":"twitter-bot","timestamp":"2025-09-04T11:08:55.014Z","type":"object"}
+{"level":"info","limit":17,"message":"Rate limit status updated:","remaining":17,"resetTime":"2025-09-05T00:00:00.000Z","service":"twitter-bot","timestamp":"2025-09-04T11:08:55.016Z"}
+{"level":"error","message":"Tweet job 1 failed:","service":"twitter-bot","timestamp":"2025-09-04T11:08:55.017Z"}
+{"level":"info","message":"Skipping database save for configuration error:","service":"twitter-bot","timestamp":"2025-09-04T11:08:55.018Z"}
+{"level":"error","message":"Tweet job 1 failed:","service":"twitter-bot","timestamp":"2025-09-04T11:08:55.025Z"}
+{"level":"info","message":"Added tweet job to queue: 2","service":"twitter-bot","timestamp":"2025-09-04T11:09:02.814Z"}
+{"imageFile":null,"level":"info","message":"Processing immediate tweet job: 2","service":"twitter-bot","text":"Hey Lol","timestamp":"2025-09-04T11:09:02.820Z"}
+{"level":"error","message":"Failed to post tweet:","service":"twitter-bot","timestamp":"2025-09-04T11:09:03.190Z"}
+{"code":429,"keys":["error","type","code","headers","rateLimit","data"],"level":"error","message":"Error details: Request failed with code 429","service":"twitter-bot","timestamp":"2025-09-04T11:09:03.191Z","type":"object"}
+{"level":"info","limit":17,"message":"Rate limit status updated:","remaining":17,"resetTime":"2025-09-05T00:00:00.000Z","service":"twitter-bot","timestamp":"2025-09-04T11:09:03.192Z"}
+{"level":"error","message":"Tweet job 2 failed:","service":"twitter-bot","timestamp":"2025-09-04T11:09:03.193Z"}
+{"level":"info","message":"Skipping database save for configuration error:","service":"twitter-bot","timestamp":"2025-09-04T11:09:03.194Z"}
+{"level":"error","message":"Tweet job 2 failed:","service":"twitter-bot","timestamp":"2025-09-04T11:09:03.197Z"}
+{"imageFile":null,"level":"info","message":"Processing immediate tweet job: 2","service":"twitter-bot","text":"Hey Lol","timestamp":"2025-09-04T11:09:05.199Z"}
+{"level":"error","message":"Failed to post tweet:","service":"twitter-bot","timestamp":"2025-09-04T11:09:05.499Z"}
+{"code":429,"keys":["error","type","code","headers","rateLimit","data"],"level":"error","message":"Error details: Request failed with code 429","service":"twitter-bot","timestamp":"2025-09-04T11:09:05.500Z","type":"object"}
+{"level":"info","limit":17,"message":"Rate limit status updated:","remaining":17,"resetTime":"2025-09-05T00:00:00.000Z","service":"twitter-bot","timestamp":"2025-09-04T11:09:05.503Z"}
+{"level":"error","message":"Tweet job 2 failed:","service":"twitter-bot","timestamp":"2025-09-04T11:09:05.505Z"}
+{"level":"info","message":"Skipping database save for configuration error:","service":"twitter-bot","timestamp":"2025-09-04T11:09:05.506Z"}
+{"level":"error","message":"Tweet job 2 failed:","service":"twitter-bot","timestamp":"2025-09-04T11:09:05.515Z"}
+{"level":"info","message":"SIGINT received, shutting down gracefully...","service":"twitter-bot","timestamp":"2025-09-04T11:09:08.641Z"}
