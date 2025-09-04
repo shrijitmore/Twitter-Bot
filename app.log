@@ -1,0 +1,267 @@
+{"level":"info","message":"🚀 Twitter Bot server running on port 8080","service":"twitter-bot","timestamp":"2025-09-04T07:15:54.452Z"}
+{"level":"info","message":"Environment: development","service":"twitter-bot","timestamp":"2025-09-04T07:15:54.462Z"}
+{"level":"info","message":"Mode: PRODUCTION","service":"twitter-bot","timestamp":"2025-09-04T07:15:54.463Z"}
+{"level":"info","message":"Health check: http://localhost:8080/health","service":"twitter-bot","timestamp":"2025-09-04T07:15:54.464Z"}
+{"level":"info","message":"Connected to Redis","service":"twitter-bot","timestamp":"2025-09-04T07:15:54.576Z"}
+{"jobData":{"scheduleData":{"custom_prompt":"LOl","id":"cca962a9-7132-4515-bf8f-a5f53eb48e0f","image_prompt":null,"include_image":false,"schedule_type":"everyMinute","status":"scheduled","text":null}},"level":"info","message":"Processing scheduled tweet job: repeat:c43a515b11e2edfa7a70baf521849e3a:1756968780000","service":"twitter-bot","timestamp":"2025-09-04T07:15:54.747Z"}
+{"level":"info","message":"🚀 Twitter Bot server running on port 8080","service":"twitter-bot","timestamp":"2025-09-04T07:15:57.436Z"}
+{"level":"info","message":"Environment: development","service":"twitter-bot","timestamp":"2025-09-04T07:15:57.440Z"}
+{"level":"info","message":"Mode: PRODUCTION","service":"twitter-bot","timestamp":"2025-09-04T07:15:57.442Z"}
+{"level":"info","message":"Health check: http://localhost:8080/health","service":"twitter-bot","timestamp":"2025-09-04T07:15:57.442Z"}
+{"level":"info","message":"Connected to Redis","service":"twitter-bot","timestamp":"2025-09-04T07:15:57.566Z"}
+{"jobData":{"scheduleData":{"custom_prompt":"LOl","id":"cca962a9-7132-4515-bf8f-a5f53eb48e0f","image_prompt":null,"include_image":false,"schedule_type":"everyMinute","status":"scheduled","text":null}},"level":"info","message":"Processing scheduled tweet job: repeat:c43a515b11e2edfa7a70baf521849e3a:1756968840000","service":"twitter-bot","timestamp":"2025-09-04T07:15:57.654Z"}
+{"level":"info","message":"Database cleanup completed","service":"twitter-bot","timestamp":"2025-09-04T07:15:58.308Z"}
+{"length":158,"level":"info","message":"AI tweet generated successfully:","prompt":"LOl...","service":"twitter-bot","timestamp":"2025-09-04T07:15:58.810Z"}
+{"level":"info","message":"Tweet posted successfully:","service":"twitter-bot","text":"Just climbed out of a 5-hour LOL match. My thumbs ...","timestamp":"2025-09-04T07:15:59.831Z","tweetId":"1963501279801659543"}
+{"code":"PGRST204","details":null,"hint":null,"level":"error","message":"Supabase update error: Could not find the 'text' column of 'scheduled_tweets' in the schema cache","service":"twitter-bot","timestamp":"2025-09-04T07:16:00.275Z"}
+{"error":"Could not find the 'text' column of 'scheduled_tweets' in the schema cache","id":"cca962a9-7132-4515-bf8f-a5f53eb48e0f","level":"error","message":"Failed to update scheduled tweet:","service":"twitter-bot","timestamp":"2025-09-04T07:16:00.277Z"}
+{"level":"error","message":"Scheduled tweet job repeat:c43a515b11e2edfa7a70baf521849e3a:1756968840000 failed:","service":"twitter-bot","timestamp":"2025-09-04T07:16:00.278Z"}
+{"level":"error","message":"Scheduled tweet job repeat:c43a515b11e2edfa7a70baf521849e3a:1756968840000 failed:","service":"twitter-bot","timestamp":"2025-09-04T07:16:00.288Z"}
+{"jobData":{"scheduleData":{"custom_prompt":"LOl","id":"cca962a9-7132-4515-bf8f-a5f53eb48e0f","image_prompt":null,"include_image":false,"schedule_type":"everyMinute","status":"scheduled","text":null}},"level":"info","message":"Processing scheduled tweet job: repeat:c43a515b11e2edfa7a70baf521849e3a:1756968720000","service":"twitter-bot","timestamp":"2025-09-04T07:16:00.306Z"}
+{"length":107,"level":"info","message":"AI tweet generated successfully:","prompt":"LOl...","service":"twitter-bot","timestamp":"2025-09-04T07:16:01.070Z"}
+{"level":"info","message":"Tweet posted successfully:","service":"twitter-bot","text":"My brain after a LOL game: 🤯  Send help (and snac...","timestamp":"2025-09-04T07:16:01.526Z","tweetId":"1963501286806229008"}
+{"code":"PGRST204","details":null,"hint":null,"level":"error","message":"Supabase update error: Could not find the 'text' column of 'scheduled_tweets' in the schema cache","service":"twitter-bot","timestamp":"2025-09-04T07:16:01.714Z"}
+{"error":"Could not find the 'text' column of 'scheduled_tweets' in the schema cache","id":"cca962a9-7132-4515-bf8f-a5f53eb48e0f","level":"error","message":"Failed to update scheduled tweet:","service":"twitter-bot","timestamp":"2025-09-04T07:16:01.714Z"}
+{"level":"error","message":"Scheduled tweet job repeat:c43a515b11e2edfa7a70baf521849e3a:1756968720000 failed:","service":"twitter-bot","timestamp":"2025-09-04T07:16:01.715Z"}
+{"level":"error","message":"Scheduled tweet job repeat:c43a515b11e2edfa7a70baf521849e3a:1756968720000 failed:","service":"twitter-bot","timestamp":"2025-09-04T07:16:01.718Z"}
+{"jobData":{"scheduleData":{"custom_prompt":"LOl","id":"cca962a9-7132-4515-bf8f-a5f53eb48e0f","image_prompt":null,"include_image":false,"schedule_type":"everyMinute","status":"scheduled","text":null}},"level":"info","message":"Processing scheduled tweet job: repeat:c43a515b11e2edfa7a70baf521849e3a:1756970160000","service":"twitter-bot","timestamp":"2025-09-04T07:16:01.738Z"}
+{"length":97,"level":"info","message":"AI tweet generated successfully:","prompt":"LOl...","service":"twitter-bot","timestamp":"2025-09-04T07:16:02.623Z"}
+{"level":"info","message":"Tweet posted successfully:","service":"twitter-bot","text":"That feeling when you steal Baron and secure the n...","timestamp":"2025-09-04T07:16:03.020Z","tweetId":"1963501293240291808"}
+{"code":"PGRST204","details":null,"hint":null,"level":"error","message":"Supabase update error: Could not find the 'text' column of 'scheduled_tweets' in the schema cache","service":"twitter-bot","timestamp":"2025-09-04T07:16:03.273Z"}
+{"error":"Could not find the 'text' column of 'scheduled_tweets' in the schema cache","id":"cca962a9-7132-4515-bf8f-a5f53eb48e0f","level":"error","message":"Failed to update scheduled tweet:","service":"twitter-bot","timestamp":"2025-09-04T07:16:03.274Z"}
+{"level":"error","message":"Scheduled tweet job repeat:c43a515b11e2edfa7a70baf521849e3a:1756970160000 failed:","service":"twitter-bot","timestamp":"2025-09-04T07:16:03.275Z"}
+{"level":"error","message":"Scheduled tweet job repeat:c43a515b11e2edfa7a70baf521849e3a:1756970160000 failed:","service":"twitter-bot","timestamp":"2025-09-04T07:16:03.277Z"}
+{"jobData":{"scheduleData":{"custom_prompt":"LOl","id":"cca962a9-7132-4515-bf8f-a5f53eb48e0f","image_prompt":null,"include_image":false,"schedule_type":"everyMinute","status":"scheduled","text":null}},"level":"info","message":"Processing scheduled tweet job: repeat:c43a515b11e2edfa7a70baf521849e3a:1756968840000","service":"twitter-bot","timestamp":"2025-09-04T07:16:05.309Z"}
+{"length":126,"level":"info","message":"AI tweet generated successfully:","prompt":"LOl...","service":"twitter-bot","timestamp":"2025-09-04T07:16:07.503Z"}
+{"level":"info","message":"Tweet posted successfully:","service":"twitter-bot","text":"GG!  That clutch Pentakill secured the win! 🤩 Wha...","timestamp":"2025-09-04T07:16:07.922Z","tweetId":"1963501313750397418"}
+{"code":"PGRST204","details":null,"hint":null,"level":"error","message":"Supabase update error: Could not find the 'text' column of 'scheduled_tweets' in the schema cache","service":"twitter-bot","timestamp":"2025-09-04T07:16:08.430Z"}
+{"error":"Could not find the 'text' column of 'scheduled_tweets' in the schema cache","id":"cca962a9-7132-4515-bf8f-a5f53eb48e0f","level":"error","message":"Failed to update scheduled tweet:","service":"twitter-bot","timestamp":"2025-09-04T07:16:08.431Z"}
+{"level":"error","message":"Scheduled tweet job repeat:c43a515b11e2edfa7a70baf521849e3a:1756968840000 failed:","service":"twitter-bot","timestamp":"2025-09-04T07:16:08.432Z"}
+{"level":"error","message":"Scheduled tweet job repeat:c43a515b11e2edfa7a70baf521849e3a:1756968840000 failed:","service":"twitter-bot","timestamp":"2025-09-04T07:16:08.440Z"}
+{"jobData":{"scheduleData":{"custom_prompt":"LOl","id":"cca962a9-7132-4515-bf8f-a5f53eb48e0f","image_prompt":null,"include_image":false,"schedule_type":"everyMinute","status":"scheduled","text":null}},"level":"info","message":"Processing scheduled tweet job: repeat:c43a515b11e2edfa7a70baf521849e3a:1756970160000","service":"twitter-bot","timestamp":"2025-09-04T07:16:08.459Z"}
+{"level":"info","limit":17,"message":"Rate limit status updated:","remaining":13,"resetTime":"2025-09-05T00:00:00.000Z","service":"twitter-bot","timestamp":"2025-09-04T07:16:08.978Z"}
+{"length":107,"level":"info","message":"AI tweet generated successfully:","prompt":"LOl...","service":"twitter-bot","timestamp":"2025-09-04T07:16:09.440Z"}
+{"level":"info","message":"Tweet posted successfully:","service":"twitter-bot","text":"Ranked anxiety is REAL 😅  Anyone else feel the pr...","timestamp":"2025-09-04T07:16:10.718Z","tweetId":"1963501321853833265"}
+{"code":"PGRST204","details":null,"hint":null,"level":"error","message":"Supabase update error: Could not find the 'text' column of 'scheduled_tweets' in the schema cache","service":"twitter-bot","timestamp":"2025-09-04T07:16:10.989Z"}
+{"error":"Could not find the 'text' column of 'scheduled_tweets' in the schema cache","id":"cca962a9-7132-4515-bf8f-a5f53eb48e0f","level":"error","message":"Failed to update scheduled tweet:","service":"twitter-bot","timestamp":"2025-09-04T07:16:10.990Z"}
+{"level":"error","message":"Scheduled tweet job repeat:c43a515b11e2edfa7a70baf521849e3a:1756970160000 failed:","service":"twitter-bot","timestamp":"2025-09-04T07:16:10.991Z"}
+{"level":"error","message":"Scheduled tweet job repeat:c43a515b11e2edfa7a70baf521849e3a:1756970160000 failed:","service":"twitter-bot","timestamp":"2025-09-04T07:16:10.994Z"}
+{"jobData":{"scheduleData":{"custom_prompt":"LOl","id":"cca962a9-7132-4515-bf8f-a5f53eb48e0f","image_prompt":null,"include_image":false,"schedule_type":"everyMinute","status":"scheduled","text":null}},"level":"info","message":"Processing scheduled tweet job: repeat:c43a515b11e2edfa7a70baf521849e3a:1756968840000","service":"twitter-bot","timestamp":"2025-09-04T07:16:23.445Z"}
+{"length":134,"level":"info","message":"AI tweet generated successfully:","prompt":"LOl...","service":"twitter-bot","timestamp":"2025-09-04T07:16:24.427Z"}
+{"level":"info","message":"Tweet posted successfully:","service":"twitter-bot","text":"Dodged a skillshot so hard, I think I broke the sp...","timestamp":"2025-09-04T07:16:24.859Z","tweetId":"1963501384990691444"}
+{"code":"PGRST204","details":null,"hint":null,"level":"error","message":"Supabase update error: Could not find the 'text' column of 'scheduled_tweets' in the schema cache","service":"twitter-bot","timestamp":"2025-09-04T07:16:25.222Z"}
+{"error":"Could not find the 'text' column of 'scheduled_tweets' in the schema cache","id":"cca962a9-7132-4515-bf8f-a5f53eb48e0f","level":"error","message":"Failed to update scheduled tweet:","service":"twitter-bot","timestamp":"2025-09-04T07:16:25.223Z"}
+{"level":"error","message":"Scheduled tweet job repeat:c43a515b11e2edfa7a70baf521849e3a:1756968840000 failed:","service":"twitter-bot","timestamp":"2025-09-04T07:16:25.223Z"}
+{"level":"error","message":"Scheduled tweet job repeat:c43a515b11e2edfa7a70baf521849e3a:1756968840000 failed:","service":"twitter-bot","timestamp":"2025-09-04T07:16:25.226Z"}
+{"jobData":{"scheduleData":{"custom_prompt":"LOl","id":"cca962a9-7132-4515-bf8f-a5f53eb48e0f","image_prompt":null,"include_image":false,"schedule_type":"everyMinute","status":"scheduled","text":null}},"level":"info","message":"Processing scheduled tweet job: repeat:c43a515b11e2edfa7a70baf521849e3a:1756970160000","service":"twitter-bot","timestamp":"2025-09-04T07:16:26.017Z"}
+{"level":"info","message":"SIGINT received, shutting down gracefully...","service":"twitter-bot","timestamp":"2025-09-04T07:16:26.519Z"}
+{"level":"info","message":"🚀 Twitter Bot server running on port 8080","service":"twitter-bot","timestamp":"2025-09-04T07:16:55.413Z"}
+{"level":"info","message":"Environment: development","service":"twitter-bot","timestamp":"2025-09-04T07:16:55.416Z"}
+{"level":"info","message":"Mode: PRODUCTION","service":"twitter-bot","timestamp":"2025-09-04T07:16:55.417Z"}
+{"level":"info","message":"Health check: http://localhost:8080/health","service":"twitter-bot","timestamp":"2025-09-04T07:16:55.418Z"}
+{"level":"info","message":"Connected to Redis","service":"twitter-bot","timestamp":"2025-09-04T07:16:55.537Z"}
+{"level":"info","message":"Database cleanup completed","service":"twitter-bot","timestamp":"2025-09-04T07:16:55.962Z"}
+{"level":"error","message":"Failed to create scheduled tweet:","service":"twitter-bot","timestamp":"2025-09-04T07:17:30.362Z"}
+{"level":"error","message":"Tweet scheduling failed:","service":"twitter-bot","timestamp":"2025-09-04T07:17:30.364Z"}
+{"level":"info","message":"SIGINT received, shutting down gracefully...","service":"twitter-bot","timestamp":"2025-09-04T07:21:20.160Z"}
+{"level":"info","message":"🚀 Twitter Bot server running on port 8080","service":"twitter-bot","timestamp":"2025-09-04T07:21:42.648Z"}
+{"level":"info","message":"Environment: development","service":"twitter-bot","timestamp":"2025-09-04T07:21:42.650Z"}
+{"level":"info","message":"Mode: PRODUCTION","service":"twitter-bot","timestamp":"2025-09-04T07:21:42.651Z"}
+{"level":"info","message":"Health check: http://localhost:8080/health","service":"twitter-bot","timestamp":"2025-09-04T07:21:42.652Z"}
+{"level":"info","message":"Connected to Redis","service":"twitter-bot","timestamp":"2025-09-04T07:21:42.818Z"}
+{"level":"info","message":"Database cleanup completed","service":"twitter-bot","timestamp":"2025-09-04T07:21:43.504Z"}
+{"level":"info","limit":17,"message":"Rate limit status updated:","remaining":17,"resetTime":"2025-09-05T00:00:00.000Z","service":"twitter-bot","timestamp":"2025-09-04T07:21:54.192Z"}
+{"level":"info","message":"Scheduled tweet created:","service":"twitter-bot","timestamp":"2025-09-04T07:22:26.414Z"}
+{"level":"info","message":"🚀 Twitter Bot server running on port 8080","service":"twitter-bot","timestamp":"2025-09-04T07:25:01.432Z"}
+{"level":"info","message":"Environment: development","service":"twitter-bot","timestamp":"2025-09-04T07:25:01.435Z"}
+{"level":"info","message":"Mode: PRODUCTION","service":"twitter-bot","timestamp":"2025-09-04T07:25:01.437Z"}
+{"level":"info","message":"Health check: http://localhost:8080/health","service":"twitter-bot","timestamp":"2025-09-04T07:25:01.437Z"}
+{"level":"info","message":"Connected to Redis","service":"twitter-bot","timestamp":"2025-09-04T07:25:01.624Z"}
+{"level":"info","message":"Database cleanup completed","service":"twitter-bot","timestamp":"2025-09-04T07:25:02.568Z"}
+{"level":"info","limit":17,"message":"Rate limit status updated:","remaining":17,"resetTime":"2025-09-05T00:00:00.000Z","service":"twitter-bot","timestamp":"2025-09-04T07:25:09.946Z"}
+{"level":"info","message":"Added tweet job to queue: 1","service":"twitter-bot","timestamp":"2025-09-04T07:25:17.214Z"}
+{"imageFile":null,"level":"info","message":"Processing immediate tweet job: 1","service":"twitter-bot","text":"Hi","timestamp":"2025-09-04T07:25:17.225Z"}
+{"level":"info","message":"Tweet posted successfully:","service":"twitter-bot","text":"Hi...","timestamp":"2025-09-04T07:25:17.795Z","tweetId":"1963503620164571343"}
+{"level":"info","message":"Tweet history saved:","service":"twitter-bot","timestamp":"2025-09-04T07:25:18.356Z"}
+{"level":"info","message":"Tweet posted successfully: 1963503620164571343","service":"twitter-bot","timestamp":"2025-09-04T07:25:18.357Z"}
+{"level":"info","message":"Tweet job 1 completed:","service":"twitter-bot","success":true,"timestamp":"2025-09-04T07:25:18.362Z","tweetId":"1963503620164571343"}
+{"level":"info","message":"Scheduled tweet created:","service":"twitter-bot","timestamp":"2025-09-04T07:25:42.919Z"}
+{"level":"info","message":"Added scheduled tweet job: repeat:c43a515b11e2edfa7a70baf521849e3a:1756970760000 with cron: */1 * * * *","service":"twitter-bot","timestamp":"2025-09-04T07:25:43.164Z"}
+{"level":"info","message":"Tweet scheduled successfully:","service":"twitter-bot","timestamp":"2025-09-04T07:25:43.165Z"}
+{"jobData":{"scheduleData":{"custom_prompt":"30 challenges about web3","id":"32cdc40d-5391-464d-bf41-56e4313fd15b","image_prompt":null,"include_image":false,"schedule_type":"everyMinute","status":"scheduled","text":null}},"level":"info","message":"Processing scheduled tweet job: repeat:c43a515b11e2edfa7a70baf521849e3a:1756970760000","service":"twitter-bot","timestamp":"2025-09-04T07:26:00.027Z"}
+{"length":159,"level":"info","message":"AI tweet generated successfully:","prompt":"30 challenges about web3...","service":"twitter-bot","timestamp":"2025-09-04T07:26:00.951Z"}
+{"level":"info","message":"Tweet posted successfully:","service":"twitter-bot","text":"Level up your Web3 game! 🚀  30 challenges to mast...","timestamp":"2025-09-04T07:26:01.399Z","tweetId":"1963503803044704714"}
+{"level":"info","message":"Scheduled tweet updated successfully:","service":"twitter-bot","timestamp":"2025-09-04T07:26:01.732Z"}
+{"level":"info","message":"Tweet history saved:","service":"twitter-bot","timestamp":"2025-09-04T07:26:01.977Z"}
+{"level":"info","message":"Scheduled tweet posted successfully: 1963503803044704714","service":"twitter-bot","timestamp":"2025-09-04T07:26:01.977Z"}
+{"level":"info","message":"Scheduled tweet job repeat:c43a515b11e2edfa7a70baf521849e3a:1756970760000 completed:","service":"twitter-bot","success":true,"timestamp":"2025-09-04T07:26:01.979Z","tweetId":"1963503803044704714"}
+{"level":"info","message":"SIGINT received, shutting down gracefully...","service":"twitter-bot","timestamp":"2025-09-04T07:26:08.351Z"}
+{"level":"info","message":"🚀 Twitter Bot server running on port 8080","service":"twitter-bot","timestamp":"2025-09-04T09:14:36.547Z"}
+{"level":"info","message":"Environment: development","service":"twitter-bot","timestamp":"2025-09-04T09:14:36.549Z"}
+{"level":"info","message":"Mode: PRODUCTION","service":"twitter-bot","timestamp":"2025-09-04T09:14:36.551Z"}
+{"level":"info","message":"Health check: http://localhost:8080/health","service":"twitter-bot","timestamp":"2025-09-04T09:14:36.551Z"}
+{"address":"127.0.0.1","code":"ECONNREFUSED","errno":-4078,"level":"error","message":"Redis Client Error: connect ECONNREFUSED 127.0.0.1:6379","port":6379,"service":"twitter-bot","stack":"Error: connect ECONNREFUSED 127.0.0.1:6379\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1615:16)","syscall":"connect","timestamp":"2025-09-04T09:14:36.697Z"}
+{"address":"127.0.0.1","code":"ECONNREFUSED","errno":-4078,"level":"error","message":"Redis Client Error: connect ECONNREFUSED 127.0.0.1:6379","port":6379,"service":"twitter-bot","stack":"Error: connect ECONNREFUSED 127.0.0.1:6379\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1615:16)","syscall":"connect","timestamp":"2025-09-04T09:14:36.833Z"}
+{"address":"127.0.0.1","code":"ECONNREFUSED","errno":-4078,"level":"error","message":"Redis Client Error: connect ECONNREFUSED 127.0.0.1:6379","port":6379,"service":"twitter-bot","stack":"Error: connect ECONNREFUSED 127.0.0.1:6379\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1615:16)","syscall":"connect","timestamp":"2025-09-04T09:14:37.065Z"}
+{"address":"127.0.0.1","code":"ECONNREFUSED","errno":-4078,"level":"error","message":"Redis Client Error: connect ECONNREFUSED 127.0.0.1:6379","port":6379,"service":"twitter-bot","stack":"Error: connect ECONNREFUSED 127.0.0.1:6379\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1615:16)","syscall":"connect","timestamp":"2025-09-04T09:14:37.453Z"}
+{"level":"info","message":"Database cleanup completed","service":"twitter-bot","timestamp":"2025-09-04T09:14:37.465Z"}
+{"address":"127.0.0.1","code":"ECONNREFUSED","errno":-4078,"level":"error","message":"Redis Client Error: connect ECONNREFUSED 127.0.0.1:6379","port":6379,"service":"twitter-bot","stack":"Error: connect ECONNREFUSED 127.0.0.1:6379\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1615:16)","syscall":"connect","timestamp":"2025-09-04T09:14:37.950Z"}
+{"address":"127.0.0.1","code":"ECONNREFUSED","errno":-4078,"level":"error","message":"Redis Client Error: connect ECONNREFUSED 127.0.0.1:6379","port":6379,"service":"twitter-bot","stack":"Error: connect ECONNREFUSED 127.0.0.1:6379\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1615:16)","syscall":"connect","timestamp":"2025-09-04T09:14:38.927Z"}
+{"address":"127.0.0.1","code":"ECONNREFUSED","errno":-4078,"level":"error","message":"Redis Client Error: connect ECONNREFUSED 127.0.0.1:6379","port":6379,"service":"twitter-bot","stack":"Error: connect ECONNREFUSED 127.0.0.1:6379\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1615:16)","syscall":"connect","timestamp":"2025-09-04T09:14:40.610Z"}
+{"address":"127.0.0.1","code":"ECONNREFUSED","errno":-4078,"level":"error","message":"Redis Client Error: connect ECONNREFUSED 127.0.0.1:6379","port":6379,"service":"twitter-bot","stack":"Error: connect ECONNREFUSED 127.0.0.1:6379\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1615:16)","syscall":"connect","timestamp":"2025-09-04T09:14:42.734Z"}
+{"address":"127.0.0.1","code":"ECONNREFUSED","errno":-4078,"level":"error","message":"Redis Client Error: connect ECONNREFUSED 127.0.0.1:6379","port":6379,"service":"twitter-bot","stack":"Error: connect ECONNREFUSED 127.0.0.1:6379\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1615:16)","syscall":"connect","timestamp":"2025-09-04T09:14:44.812Z"}
+{"address":"127.0.0.1","code":"ECONNREFUSED","errno":-4078,"level":"error","message":"Redis Client Error: connect ECONNREFUSED 127.0.0.1:6379","port":6379,"service":"twitter-bot","stack":"Error: connect ECONNREFUSED 127.0.0.1:6379\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1615:16)","syscall":"connect","timestamp":"2025-09-04T09:14:46.950Z"}
+{"address":"127.0.0.1","code":"ECONNREFUSED","errno":-4078,"level":"error","message":"Redis Client Error: connect ECONNREFUSED 127.0.0.1:6379","port":6379,"service":"twitter-bot","stack":"Error: connect ECONNREFUSED 127.0.0.1:6379\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1615:16)","syscall":"connect","timestamp":"2025-09-04T09:14:49.020Z"}
+{"address":"127.0.0.1","code":"ECONNREFUSED","errno":-4078,"level":"error","message":"Redis Client Error: connect ECONNREFUSED 127.0.0.1:6379","port":6379,"service":"twitter-bot","stack":"Error: connect ECONNREFUSED 127.0.0.1:6379\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1615:16)","syscall":"connect","timestamp":"2025-09-04T09:14:51.184Z"}
+{"level":"info","message":"Connected to Redis","service":"twitter-bot","timestamp":"2025-09-04T09:14:53.217Z"}
+{"level":"info","limit":17,"message":"Rate limit status updated:","remaining":17,"resetTime":"2025-09-05T00:00:00.000Z","service":"twitter-bot","timestamp":"2025-09-04T09:15:00.240Z"}
+{"level":"error","message":"AI tweet generation failed:","service":"twitter-bot","timestamp":"2025-09-04T09:15:48.414Z"}
+{"length":144,"level":"info","message":"AI tweet generated successfully:","prompt":"Web3 News for learning...","service":"twitter-bot","timestamp":"2025-09-04T09:16:00.073Z"}
+{"level":"info","message":"Added tweet job to queue: 1","service":"twitter-bot","timestamp":"2025-09-04T09:16:06.450Z"}
+{"imageFile":null,"level":"info","message":"Processing immediate tweet job: 1","service":"twitter-bot","text":"Level up your Web3 knowledge!  New resources & insights dropping weekly.  Stay ahead of the curve. Learn more: [link] #Web3 #BlockchainEducation","timestamp":"2025-09-04T09:16:06.457Z"}
+{"level":"info","message":"Tweet posted successfully:","service":"twitter-bot","text":"Level up your Web3 knowledge!  New resources & ins...","timestamp":"2025-09-04T09:16:07.000Z","tweetId":"1963531508498760119"}
+{"level":"info","message":"Tweet history saved:","service":"twitter-bot","timestamp":"2025-09-04T09:16:07.457Z"}
+{"level":"info","message":"Tweet posted successfully: 1963531508498760119","service":"twitter-bot","timestamp":"2025-09-04T09:16:07.458Z"}
+{"level":"info","message":"Tweet job 1 completed:","service":"twitter-bot","success":true,"timestamp":"2025-09-04T09:16:07.462Z","tweetId":"1963531508498760119"}
+{"level":"info","message":"Scheduled tweet created:","service":"twitter-bot","timestamp":"2025-09-04T09:17:11.938Z"}
+{"level":"info","message":"Added scheduled tweet job: repeat:c43a515b11e2edfa7a70baf521849e3a:1756977480000 with cron: */1 * * * *","service":"twitter-bot","timestamp":"2025-09-04T09:17:12.152Z"}
+{"level":"info","message":"Tweet scheduled successfully:","service":"twitter-bot","timestamp":"2025-09-04T09:17:12.153Z"}
+{"jobData":{"scheduleData":{"custom_prompt":"30 days challenge web3 start with day one keep track of previous tweet","id":"8e39dd11-c8fb-4454-90a3-ab616c591e2f","image_prompt":null,"include_image":false,"schedule_type":"everyMinute","status":"scheduled","text":null}},"level":"info","message":"Processing scheduled tweet job: repeat:c43a515b11e2edfa7a70baf521849e3a:1756977480000","service":"twitter-bot","timestamp":"2025-09-04T09:18:00.023Z"}
+{"length":128,"level":"info","message":"AI tweet generated successfully:","prompt":"30 days challenge web3 start with day one keep tra...","service":"twitter-bot","timestamp":"2025-09-04T09:18:01.239Z"}
+{"level":"info","message":"Tweet posted successfully:","service":"twitter-bot","text":"Day 1/30 of my Web3 challenge! 🚀  Let's learn & b...","timestamp":"2025-09-04T09:18:01.708Z","tweetId":"1963531989740617740"}
+{"level":"info","message":"Scheduled tweet updated successfully:","service":"twitter-bot","timestamp":"2025-09-04T09:18:02.313Z"}
+{"level":"info","message":"Tweet history saved:","service":"twitter-bot","timestamp":"2025-09-04T09:18:02.578Z"}
+{"level":"info","message":"Scheduled tweet posted successfully: 1963531989740617740","service":"twitter-bot","timestamp":"2025-09-04T09:18:02.579Z"}
+{"level":"info","message":"Scheduled tweet job repeat:c43a515b11e2edfa7a70baf521849e3a:1756977480000 completed:","service":"twitter-bot","success":true,"timestamp":"2025-09-04T09:18:02.582Z","tweetId":"1963531989740617740"}
+{"jobData":{"scheduleData":{"custom_prompt":"30 days challenge web3 start with day one keep track of previous tweet","id":"8e39dd11-c8fb-4454-90a3-ab616c591e2f","image_prompt":null,"include_image":false,"schedule_type":"everyMinute","status":"scheduled","text":null}},"level":"info","message":"Processing scheduled tweet job: repeat:c43a515b11e2edfa7a70baf521849e3a:1756977540000","service":"twitter-bot","timestamp":"2025-09-04T09:19:00.015Z"}
+{"length":149,"level":"info","message":"AI tweet generated successfully:","prompt":"30 days challenge web3 start with day one keep tra...","service":"twitter-bot","timestamp":"2025-09-04T09:19:01.176Z"}
+{"level":"info","message":"Tweet posted successfully:","service":"twitter-bot","text":"Day 2/30: Web3 journey continues!  Yesterday's NFT...","timestamp":"2025-09-04T09:19:01.811Z","tweetId":"1963532241675718701"}
+{"level":"info","message":"Scheduled tweet updated successfully:","service":"twitter-bot","timestamp":"2025-09-04T09:19:03.044Z"}
+{"level":"info","message":"Tweet history saved:","service":"twitter-bot","timestamp":"2025-09-04T09:19:03.404Z"}
+{"level":"info","message":"Scheduled tweet posted successfully: 1963532241675718701","service":"twitter-bot","timestamp":"2025-09-04T09:19:03.405Z"}
+{"level":"info","message":"Scheduled tweet job repeat:c43a515b11e2edfa7a70baf521849e3a:1756977540000 completed:","service":"twitter-bot","success":true,"timestamp":"2025-09-04T09:19:03.407Z","tweetId":"1963532241675718701"}
+{"jobData":{"scheduleData":{"custom_prompt":"30 days challenge web3 start with day one keep track of previous tweet","id":"8e39dd11-c8fb-4454-90a3-ab616c591e2f","image_prompt":null,"include_image":false,"schedule_type":"everyMinute","status":"scheduled","text":null}},"level":"info","message":"Processing scheduled tweet job: repeat:c43a515b11e2edfa7a70baf521849e3a:1756977600000","service":"twitter-bot","timestamp":"2025-09-04T09:20:00.019Z"}
+{"length":143,"level":"info","message":"AI tweet generated successfully:","prompt":"30 days challenge web3 start with day one keep tra...","service":"twitter-bot","timestamp":"2025-09-04T09:20:01.089Z"}
+{"level":"info","message":"Tweet posted successfully:","service":"twitter-bot","text":"Day 3/30:  Web3 deep dive! 🤿 Yesterday's DeFi les...","timestamp":"2025-09-04T09:20:01.958Z","tweetId":"1963532493510119629"}
+{"level":"info","message":"Scheduled tweet updated successfully:","service":"twitter-bot","timestamp":"2025-09-04T09:20:02.814Z"}
+{"level":"info","message":"Tweet history saved:","service":"twitter-bot","timestamp":"2025-09-04T09:20:03.092Z"}
+{"level":"info","message":"Scheduled tweet posted successfully: 1963532493510119629","service":"twitter-bot","timestamp":"2025-09-04T09:20:03.093Z"}
+{"level":"info","message":"Scheduled tweet job repeat:c43a515b11e2edfa7a70baf521849e3a:1756977600000 completed:","service":"twitter-bot","success":true,"timestamp":"2025-09-04T09:20:03.095Z","tweetId":"1963532493510119629"}
+{"jobData":{"scheduleData":{"custom_prompt":"30 days challenge web3 start with day one keep track of previous tweet","id":"8e39dd11-c8fb-4454-90a3-ab616c591e2f","image_prompt":null,"include_image":false,"schedule_type":"everyMinute","status":"scheduled","text":null}},"level":"info","message":"Processing scheduled tweet job: repeat:c43a515b11e2edfa7a70baf521849e3a:1756977660000","service":"twitter-bot","timestamp":"2025-09-04T09:21:00.016Z"}
+{"length":123,"level":"info","message":"AI tweet generated successfully:","prompt":"30 days challenge web3 start with day one keep tra...","service":"twitter-bot","timestamp":"2025-09-04T09:21:01.375Z"}
+{"level":"info","message":"Tweet posted successfully:","service":"twitter-bot","text":"Day 4/30:  Web3 challenge continues! 💪 Yesterday'...","timestamp":"2025-09-04T09:21:01.871Z","tweetId":"1963532745420021963"}
+{"code":"PGRST116","details":"The result contains 0 rows","hint":null,"level":"error","message":"Supabase update error: Cannot coerce the result to a single JSON object","service":"twitter-bot","timestamp":"2025-09-04T09:21:02.235Z"}
+{"error":"Cannot coerce the result to a single JSON object","id":"8e39dd11-c8fb-4454-90a3-ab616c591e2f","level":"error","message":"Failed to update scheduled tweet:","service":"twitter-bot","timestamp":"2025-09-04T09:21:02.236Z"}
+{"level":"error","message":"Scheduled tweet job repeat:c43a515b11e2edfa7a70baf521849e3a:1756977660000 failed:","service":"twitter-bot","timestamp":"2025-09-04T09:21:02.237Z"}
+{"level":"error","message":"Scheduled tweet job repeat:c43a515b11e2edfa7a70baf521849e3a:1756977660000 failed:","service":"twitter-bot","timestamp":"2025-09-04T09:21:02.244Z"}
+{"jobData":{"scheduleData":{"custom_prompt":"30 days challenge web3 start with day one keep track of previous tweet","id":"8e39dd11-c8fb-4454-90a3-ab616c591e2f","image_prompt":null,"include_image":false,"schedule_type":"everyMinute","status":"scheduled","text":null}},"level":"info","message":"Processing scheduled tweet job: repeat:c43a515b11e2edfa7a70baf521849e3a:1756977660000","service":"twitter-bot","timestamp":"2025-09-04T09:21:07.256Z"}
+{"length":152,"level":"info","message":"AI tweet generated successfully:","prompt":"30 days challenge web3 start with day one keep tra...","service":"twitter-bot","timestamp":"2025-09-04T09:21:08.396Z"}
+{"level":"info","message":"Tweet posted successfully:","service":"twitter-bot","text":"Day 5/30: Web3 Challenge!  Yesterday's DAO deep di...","timestamp":"2025-09-04T09:21:08.906Z","tweetId":"1963532774792634406"}
+{"code":"PGRST116","details":"The result contains 0 rows","hint":null,"level":"error","message":"Supabase update error: Cannot coerce the result to a single JSON object","service":"twitter-bot","timestamp":"2025-09-04T09:21:09.323Z"}
+{"error":"Cannot coerce the result to a single JSON object","id":"8e39dd11-c8fb-4454-90a3-ab616c591e2f","level":"error","message":"Failed to update scheduled tweet:","service":"twitter-bot","timestamp":"2025-09-04T09:21:09.324Z"}
+{"level":"error","message":"Scheduled tweet job repeat:c43a515b11e2edfa7a70baf521849e3a:1756977660000 failed:","service":"twitter-bot","timestamp":"2025-09-04T09:21:09.325Z"}
+{"level":"error","message":"Scheduled tweet job repeat:c43a515b11e2edfa7a70baf521849e3a:1756977660000 failed:","service":"twitter-bot","timestamp":"2025-09-04T09:21:09.328Z"}
+{"level":"info","message":"SIGINT received, shutting down gracefully...","service":"twitter-bot","timestamp":"2025-09-04T09:21:18.689Z"}
+{"level":"info","message":"Shutting down tweet processor...","service":"twitter-bot","timestamp":"2025-09-04T09:21:18.690Z"}
+{"level":"info","message":"🚀 Twitter Bot server running on port 8080","service":"twitter-bot","timestamp":"2025-09-04T09:40:33.712Z"}
+{"level":"info","message":"Environment: development","service":"twitter-bot","timestamp":"2025-09-04T09:40:33.715Z"}
+{"level":"info","message":"Mode: PRODUCTION","service":"twitter-bot","timestamp":"2025-09-04T09:40:33.716Z"}
+{"level":"info","message":"Health check: http://localhost:8080/health","service":"twitter-bot","timestamp":"2025-09-04T09:40:33.717Z"}
+{"level":"info","message":"Connected to Redis","service":"twitter-bot","timestamp":"2025-09-04T09:40:33.865Z"}
+{"jobData":{"scheduleData":{"custom_prompt":"30 days challenge web3 start with day one keep track of previous tweet","id":"8e39dd11-c8fb-4454-90a3-ab616c591e2f","image_prompt":null,"include_image":false,"schedule_type":"everyMinute","status":"scheduled","text":null}},"level":"info","message":"Processing scheduled tweet job: repeat:c43a515b11e2edfa7a70baf521849e3a:1756977660000","service":"twitter-bot","timestamp":"2025-09-04T09:40:33.942Z"}
+{"level":"info","message":"Database cleanup completed","service":"twitter-bot","timestamp":"2025-09-04T09:40:34.916Z"}
+{"length":133,"level":"info","message":"AI tweet generated successfully:","prompt":"30 days challenge web3 start with day one keep tra...","service":"twitter-bot","timestamp":"2025-09-04T09:40:34.996Z"}
+{"level":"info","message":"Tweet posted successfully:","service":"twitter-bot","text":"Day 1/30 of my Web3 journey! 🚀  Let's goooo!  Wha...","timestamp":"2025-09-04T09:40:35.672Z","tweetId":"1963537668387815599"}
+{"code":"PGRST116","details":"The result contains 0 rows","hint":null,"level":"error","message":"Supabase update error: Cannot coerce the result to a single JSON object","service":"twitter-bot","timestamp":"2025-09-04T09:40:36.085Z"}
+{"error":"Cannot coerce the result to a single JSON object","id":"8e39dd11-c8fb-4454-90a3-ab616c591e2f","level":"error","message":"Failed to update scheduled tweet:","service":"twitter-bot","timestamp":"2025-09-04T09:40:36.086Z"}
+{"level":"error","message":"Scheduled tweet job repeat:c43a515b11e2edfa7a70baf521849e3a:1756977660000 failed:","service":"twitter-bot","timestamp":"2025-09-04T09:40:36.086Z"}
+{"level":"error","message":"Scheduled tweet job repeat:c43a515b11e2edfa7a70baf521849e3a:1756977660000 failed:","service":"twitter-bot","timestamp":"2025-09-04T09:40:36.093Z"}
+{"jobData":{"scheduleData":{"custom_prompt":"30 days challenge web3 start with day one keep track of previous tweet","id":"8e39dd11-c8fb-4454-90a3-ab616c591e2f","image_prompt":null,"include_image":false,"schedule_type":"everyMinute","status":"scheduled","text":null}},"level":"info","message":"Processing scheduled tweet job: repeat:c43a515b11e2edfa7a70baf521849e3a:1756977720000","service":"twitter-bot","timestamp":"2025-09-04T09:40:36.100Z"}
+{"length":139,"level":"info","message":"AI tweet generated successfully:","prompt":"30 days challenge web3 start with day one keep tra...","service":"twitter-bot","timestamp":"2025-09-04T09:40:36.984Z"}
+{"level":"info","message":"Tweet posted successfully:","service":"twitter-bot","text":"Level up your Web3 game! 🕹️ Day 2/30:  Today's fo...","timestamp":"2025-09-04T09:40:37.397Z","tweetId":"1963537675715318108"}
+{"code":"PGRST116","details":"The result contains 0 rows","hint":null,"level":"error","message":"Supabase update error: Cannot coerce the result to a single JSON object","service":"twitter-bot","timestamp":"2025-09-04T09:40:37.607Z"}
+{"error":"Cannot coerce the result to a single JSON object","id":"8e39dd11-c8fb-4454-90a3-ab616c591e2f","level":"error","message":"Failed to update scheduled tweet:","service":"twitter-bot","timestamp":"2025-09-04T09:40:37.608Z"}
+{"level":"error","message":"Scheduled tweet job repeat:c43a515b11e2edfa7a70baf521849e3a:1756977720000 failed:","service":"twitter-bot","timestamp":"2025-09-04T09:40:37.609Z"}
+{"level":"error","message":"Scheduled tweet job repeat:c43a515b11e2edfa7a70baf521849e3a:1756977720000 failed:","service":"twitter-bot","timestamp":"2025-09-04T09:40:37.614Z"}
+{"jobData":{"scheduleData":{"custom_prompt":"30 days challenge web3 start with day one keep track of previous tweet","id":"8e39dd11-c8fb-4454-90a3-ab616c591e2f","image_prompt":null,"include_image":false,"schedule_type":"everyMinute","status":"scheduled","text":null}},"level":"info","message":"Processing scheduled tweet job: repeat:c43a515b11e2edfa7a70baf521849e3a:1756977720000","service":"twitter-bot","timestamp":"2025-09-04T09:40:42.631Z"}
+{"length":130,"level":"info","message":"AI tweet generated successfully:","prompt":"30 days challenge web3 start with day one keep tra...","service":"twitter-bot","timestamp":"2025-09-04T09:40:43.526Z"}
+{"level":"info","message":"Tweet posted successfully:","service":"twitter-bot","text":"Day 1/30: Web3 challenge launched!  First task:  N...","timestamp":"2025-09-04T09:40:44.100Z","tweetId":"1963537703712297070"}
+{"code":"PGRST116","details":"The result contains 0 rows","hint":null,"level":"error","message":"Supabase update error: Cannot coerce the result to a single JSON object","service":"twitter-bot","timestamp":"2025-09-04T09:40:44.500Z"}
+{"error":"Cannot coerce the result to a single JSON object","id":"8e39dd11-c8fb-4454-90a3-ab616c591e2f","level":"error","message":"Failed to update scheduled tweet:","service":"twitter-bot","timestamp":"2025-09-04T09:40:44.501Z"}
+{"level":"error","message":"Scheduled tweet job repeat:c43a515b11e2edfa7a70baf521849e3a:1756977720000 failed:","service":"twitter-bot","timestamp":"2025-09-04T09:40:44.503Z"}
+{"level":"error","message":"Scheduled tweet job repeat:c43a515b11e2edfa7a70baf521849e3a:1756977720000 failed:","service":"twitter-bot","timestamp":"2025-09-04T09:40:44.507Z"}
+{"level":"info","message":"SIGINT received, shutting down gracefully...","service":"twitter-bot","timestamp":"2025-09-04T09:40:44.597Z"}
+{"level":"info","message":"🚀 Twitter Bot server running on port 8080","service":"twitter-bot","timestamp":"2025-09-04T09:41:11.189Z"}
+{"level":"info","message":"Environment: development","service":"twitter-bot","timestamp":"2025-09-04T09:41:11.193Z"}
+{"level":"info","message":"Mode: PRODUCTION","service":"twitter-bot","timestamp":"2025-09-04T09:41:11.194Z"}
+{"level":"info","message":"Health check: http://localhost:8080/health","service":"twitter-bot","timestamp":"2025-09-04T09:41:11.195Z"}
+{"level":"info","message":"Connected to Redis","service":"twitter-bot","timestamp":"2025-09-04T09:41:11.340Z"}
+{"level":"info","message":"Database cleanup completed","service":"twitter-bot","timestamp":"2025-09-04T09:41:12.393Z"}
+{"length":188,"level":"info","message":"AI tweet generated successfully:","prompt":"tweet about AI ML...","service":"twitter-bot","timestamp":"2025-09-04T09:42:05.360Z"}
+{"level":"info","limit":17,"message":"Rate limit status updated:","remaining":17,"resetTime":"2025-09-05T00:00:00.000Z","service":"twitter-bot","timestamp":"2025-09-04T09:42:11.959Z"}
+{"level":"info","message":"Added tweet job to queue: 1","service":"twitter-bot","timestamp":"2025-09-04T09:42:11.978Z"}
+{"imageFile":null,"level":"info","message":"Processing immediate tweet job: 1","service":"twitter-bot","text":"AI & ML:  Not just buzzwords!  They're transforming how we diagnose diseases, personalize education, & even predict weather.  The future is intelligent, and it's here. #AI #MachineLearning","timestamp":"2025-09-04T09:42:12.026Z"}
+{"level":"error","message":"Failed to post tweet:","service":"twitter-bot","timestamp":"2025-09-04T09:42:12.459Z"}
+{"code":429,"keys":["error","type","code","headers","rateLimit","data"],"level":"error","message":"Error details: Request failed with code 429","service":"twitter-bot","timestamp":"2025-09-04T09:42:12.460Z","type":"object"}
+{"level":"info","limit":17,"message":"Rate limit status updated:","remaining":17,"resetTime":"2025-09-05T00:00:00.000Z","service":"twitter-bot","timestamp":"2025-09-04T09:42:12.465Z"}
+{"level":"error","message":"Tweet job 1 failed:","service":"twitter-bot","timestamp":"2025-09-04T09:42:12.466Z"}
+{"level":"info","message":"Skipping database save for configuration error:","service":"twitter-bot","timestamp":"2025-09-04T09:42:12.467Z"}
+{"level":"error","message":"Tweet job 1 failed:","service":"twitter-bot","timestamp":"2025-09-04T09:42:12.488Z"}
+{"imageFile":null,"level":"info","message":"Processing immediate tweet job: 1","service":"twitter-bot","text":"AI & ML:  Not just buzzwords!  They're transforming how we diagnose diseases, personalize education, & even predict weather.  The future is intelligent, and it's here. #AI #MachineLearning","timestamp":"2025-09-04T09:42:14.489Z"}
+{"level":"error","message":"Failed to post tweet:","service":"twitter-bot","timestamp":"2025-09-04T09:42:14.855Z"}
+{"code":429,"keys":["error","type","code","headers","rateLimit","data"],"level":"error","message":"Error details: Request failed with code 429","service":"twitter-bot","timestamp":"2025-09-04T09:42:14.856Z","type":"object"}
+{"level":"info","limit":17,"message":"Rate limit status updated:","remaining":17,"resetTime":"2025-09-05T00:00:00.000Z","service":"twitter-bot","timestamp":"2025-09-04T09:42:14.860Z"}
+{"level":"error","message":"Tweet job 1 failed:","service":"twitter-bot","timestamp":"2025-09-04T09:42:14.861Z"}
+{"level":"info","message":"Skipping database save for configuration error:","service":"twitter-bot","timestamp":"2025-09-04T09:42:14.863Z"}
+{"level":"error","message":"Tweet job 1 failed:","service":"twitter-bot","timestamp":"2025-09-04T09:42:14.866Z"}
+{"imageFile":null,"level":"info","message":"Processing immediate tweet job: 1","service":"twitter-bot","text":"AI & ML:  Not just buzzwords!  They're transforming how we diagnose diseases, personalize education, & even predict weather.  The future is intelligent, and it's here. #AI #MachineLearning","timestamp":"2025-09-04T09:42:20.872Z"}
+{"level":"error","message":"Failed to post tweet:","service":"twitter-bot","timestamp":"2025-09-04T09:42:21.324Z"}
+{"code":429,"keys":["error","type","code","headers","rateLimit","data"],"level":"error","message":"Error details: Request failed with code 429","service":"twitter-bot","timestamp":"2025-09-04T09:42:21.325Z","type":"object"}
+{"level":"info","limit":17,"message":"Rate limit status updated:","remaining":17,"resetTime":"2025-09-05T00:00:00.000Z","service":"twitter-bot","timestamp":"2025-09-04T09:42:21.329Z"}
+{"level":"error","message":"Tweet job 1 failed:","service":"twitter-bot","timestamp":"2025-09-04T09:42:21.330Z"}
+{"level":"info","message":"Skipping database save for configuration error:","service":"twitter-bot","timestamp":"2025-09-04T09:42:21.331Z"}
+{"level":"error","message":"Tweet job 1 failed:","service":"twitter-bot","timestamp":"2025-09-04T09:42:21.335Z"}
+{"level":"info","message":"SIGINT received, shutting down gracefully...","service":"twitter-bot","timestamp":"2025-09-04T09:42:36.758Z"}
+{"level":"info","message":"Shutting down tweet processor...","service":"twitter-bot","timestamp":"2025-09-04T09:42:36.759Z"}
+{"level":"info","message":"🚀 Twitter Bot server running on port 8080","service":"twitter-bot","timestamp":"2025-09-04T09:44:22.617Z"}
+{"level":"info","message":"Environment: development","service":"twitter-bot","timestamp":"2025-09-04T09:44:22.620Z"}
+{"level":"info","message":"Mode: PRODUCTION","service":"twitter-bot","timestamp":"2025-09-04T09:44:22.622Z"}
+{"level":"info","message":"Health check: http://localhost:8080/health","service":"twitter-bot","timestamp":"2025-09-04T09:44:22.622Z"}
+{"level":"info","message":"Connected to Redis","service":"twitter-bot","timestamp":"2025-09-04T09:44:22.699Z"}
+{"level":"info","message":"Database cleanup completed","service":"twitter-bot","timestamp":"2025-09-04T09:44:23.305Z"}
+{"level":"info","limit":17,"message":"Rate limit status updated:","remaining":17,"resetTime":"2025-09-05T00:00:00.000Z","service":"twitter-bot","timestamp":"2025-09-04T09:44:34.107Z"}
+{"length":128,"level":"info","message":"AI tweet generated successfully:","prompt":"Tweet about AI ML...","service":"twitter-bot","timestamp":"2025-09-04T09:44:42.756Z"}
+{"level":"info","message":"Added tweet job to queue: 2","service":"twitter-bot","timestamp":"2025-09-04T09:44:45.535Z"}
+{"imageFile":null,"level":"info","message":"Processing immediate tweet job: 2","service":"twitter-bot","text":"AI & ML:  Building the future, one algorithm at a time! 🚀🤖  What mind-blowing applications are YOU most excited about? #AI #ML","timestamp":"2025-09-04T09:44:45.546Z"}
+{"level":"error","message":"Failed to post tweet:","service":"twitter-bot","timestamp":"2025-09-04T09:44:45.982Z"}
+{"code":429,"keys":["error","type","code","headers","rateLimit","data"],"level":"error","message":"Error details: Request failed with code 429","service":"twitter-bot","timestamp":"2025-09-04T09:44:45.983Z","type":"object"}
+{"level":"info","limit":17,"message":"Rate limit status updated:","remaining":17,"resetTime":"2025-09-05T00:00:00.000Z","service":"twitter-bot","timestamp":"2025-09-04T09:44:45.986Z"}
+{"level":"error","message":"Tweet job 2 failed:","service":"twitter-bot","timestamp":"2025-09-04T09:44:45.987Z"}
+{"level":"info","message":"Skipping database save for configuration error:","service":"twitter-bot","timestamp":"2025-09-04T09:44:45.988Z"}
+{"level":"error","message":"Tweet job 2 failed:","service":"twitter-bot","timestamp":"2025-09-04T09:44:46.003Z"}
+{"imageFile":null,"level":"info","message":"Processing immediate tweet job: 2","service":"twitter-bot","text":"AI & ML:  Building the future, one algorithm at a time! 🚀🤖  What mind-blowing applications are YOU most excited about? #AI #ML","timestamp":"2025-09-04T09:44:48.004Z"}
+{"level":"error","message":"Failed to post tweet:","service":"twitter-bot","timestamp":"2025-09-04T09:44:48.284Z"}
+{"code":429,"keys":["error","type","code","headers","rateLimit","data"],"level":"error","message":"Error details: Request failed with code 429","service":"twitter-bot","timestamp":"2025-09-04T09:44:48.285Z","type":"object"}
+{"level":"info","limit":17,"message":"Rate limit status updated:","remaining":17,"resetTime":"2025-09-05T00:00:00.000Z","service":"twitter-bot","timestamp":"2025-09-04T09:44:48.289Z"}
+{"level":"error","message":"Tweet job 2 failed:","service":"twitter-bot","timestamp":"2025-09-04T09:44:48.290Z"}
+{"level":"info","message":"Skipping database save for configuration error:","service":"twitter-bot","timestamp":"2025-09-04T09:44:48.291Z"}
+{"level":"error","message":"Tweet job 2 failed:","service":"twitter-bot","timestamp":"2025-09-04T09:44:48.295Z"}
+{"imageFile":null,"level":"info","message":"Processing immediate tweet job: 2","service":"twitter-bot","text":"AI & ML:  Building the future, one algorithm at a time! 🚀🤖  What mind-blowing applications are YOU most excited about? #AI #ML","timestamp":"2025-09-04T09:44:54.304Z"}
+{"level":"error","message":"Failed to post tweet:","service":"twitter-bot","timestamp":"2025-09-04T09:44:54.757Z"}
+{"code":429,"keys":["error","type","code","headers","rateLimit","data"],"level":"error","message":"Error details: Request failed with code 429","service":"twitter-bot","timestamp":"2025-09-04T09:44:54.757Z","type":"object"}
+{"level":"info","limit":17,"message":"Rate limit status updated:","remaining":17,"resetTime":"2025-09-05T00:00:00.000Z","service":"twitter-bot","timestamp":"2025-09-04T09:44:54.759Z"}
+{"level":"error","message":"Tweet job 2 failed:","service":"twitter-bot","timestamp":"2025-09-04T09:44:54.760Z"}
+{"level":"info","message":"Skipping database save for configuration error:","service":"twitter-bot","timestamp":"2025-09-04T09:44:54.760Z"}
+{"level":"error","message":"Tweet job 2 failed:","service":"twitter-bot","timestamp":"2025-09-04T09:44:54.762Z"}
+{"level":"info","message":"Scheduled tweet created:","service":"twitter-bot","timestamp":"2025-09-04T09:45:38.298Z"}
+{"level":"info","message":"Added scheduled tweet job: repeat:c43a515b11e2edfa7a70baf521849e3a:1756979160000 with cron: */1 * * * *","service":"twitter-bot","timestamp":"2025-09-04T09:45:38.539Z"}
+{"level":"info","message":"Tweet scheduled successfully:","service":"twitter-bot","timestamp":"2025-09-04T09:45:38.540Z"}
+{"jobData":{"scheduleData":{"custom_prompt":"DAy 3 challanege wbout Web3 start with day 1","id":"b2b78ef0-57c9-4ccd-b7f7-0afc3fac58c8","image_prompt":null,"include_image":false,"schedule_type":"everyMinute","status":"scheduled","text":null}},"level":"info","message":"Processing scheduled tweet job: repeat:c43a515b11e2edfa7a70baf521849e3a:1756979160000","service":"twitter-bot","timestamp":"2025-09-04T09:46:00.024Z"}
+{"length":179,"level":"info","message":"AI tweet generated successfully:","prompt":"DAy 3 challanege wbout Web3 start with day 1...","service":"twitter-bot","timestamp":"2025-09-04T09:46:01.089Z"}
+{"level":"error","message":"Failed to post tweet:","service":"twitter-bot","timestamp":"2025-09-04T09:46:01.501Z"}
+{"code":429,"keys":["error","type","code","headers","rateLimit","data"],"level":"error","message":"Error details: Request failed with code 429","service":"twitter-bot","timestamp":"2025-09-04T09:46:01.502Z","type":"object"}
+{"level":"info","limit":17,"message":"Rate limit status updated:","remaining":17,"resetTime":"2025-09-05T00:00:00.000Z","service":"twitter-bot","timestamp":"2025-09-04T09:46:01.504Z"}
+{"level":"error","message":"Scheduled tweet job repeat:c43a515b11e2edfa7a70baf521849e3a:1756979160000 failed:","service":"twitter-bot","timestamp":"2025-09-04T09:46:01.505Z"}
+{"level":"error","message":"Scheduled tweet job repeat:c43a515b11e2edfa7a70baf521849e3a:1756979160000 failed:","service":"twitter-bot","timestamp":"2025-09-04T09:46:01.509Z"}
+{"jobData":{"scheduleData":{"custom_prompt":"DAy 3 challanege wbout Web3 start with day 1","id":"b2b78ef0-57c9-4ccd-b7f7-0afc3fac58c8","image_prompt":null,"include_image":false,"schedule_type":"everyMinute","status":"scheduled","text":null}},"level":"info","message":"Processing scheduled tweet job: repeat:c43a515b11e2edfa7a70baf521849e3a:1756979160000","service":"twitter-bot","timestamp":"2025-09-04T09:46:06.523Z"}
+{"level":"info","message":"SIGINT received, shutting down gracefully...","service":"twitter-bot","timestamp":"2025-09-04T09:46:07.251Z"}

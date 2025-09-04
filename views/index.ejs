@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🐦 Twitter Bot - AI-Powered Social Media Automation</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    .gradient-bg {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.25);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+    .tweet-card {
+      transition: all 0.3s ease;
+    }
+    .tweet-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+    .ai-suggestion {
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .ai-suggestion:hover {
+      background-color: #f3f4f6;
+      transform: scale(1.02);
+    }
+  </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+  <!-- Header -->
+  <header class="gradient-bg text-white shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 py-6">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center space-x-3">
+          <div class="bg-white bg-opacity-20 rounded-full p-3">
+            <i class="fab fa-twitter text-2xl"></i>
+          </div>
+          <div>
+            <h1 class="text-3xl font-bold">Twitter Bot</h1>
+            <p class="text-blue-100">AI-Powered Social Media Automation</p>
+          </div>
+        </div>
+        <div class="flex items-center space-x-4">
+          <div class="text-right">
+            <div class="text-sm text-blue-100">Today's Posts</div>
+            <div class="text-2xl font-bold"><%= stats.todayTweets %>/17</div>
+          </div>
+          <button onclick="refreshRateLimit()" class="bg-white bg-opacity-20 hover:bg-opacity-30 rounded-lg p-2 transition">
+            <i class="fas fa-sync-alt"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="max-w-7xl mx-auto px-4 py-8">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      
+      <!-- Main Content -->
+      <div class="lg:col-span-2 space-y-6">
+        
+        <!-- Rate Limit Status Card -->
+        <div class="bg-white shadow-lg rounded-xl p-6 border border-gray-200">
+          <div class="flex justify-between items-center mb-4">
+            <h2 class="text-xl font-semibold text-gray-800 flex items-center">
+              <i class="fas fa-chart-line mr-2 text-blue-500"></i>
+              API Rate Limits
+            </h2>
+            <button onclick="refreshRateLimit()" class="text-blue-500 hover:text-blue-700 transition">
+              <i class="fas fa-sync-alt"></i> Refresh
+            </button>
+          </div>
+          <div id="rateLimitStatus" class="space-y-3">
+            <div class="flex items-center">
+              <div class="w-4 h-4 rounded-full bg-gray-300 mr-3" id="statusIndicator"></div>
+              <span id="statusText" class="text-sm text-gray-600">Checking rate limits...</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-3">
+              <div id="progressBar" class="bg-blue-600 h-3 rounded-full transition-all duration-300" style="width: 0%"></div>
+            </div>
+            <div class="flex justify-between text-sm text-gray-600">
+              <span id="remainingTweets">-</span>
+              <span id="resetTime">Next reset: -</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI Tweet Generator -->
+        <div class="bg-white shadow-lg rounded-xl p-6 border border-gray-200">
+          <h2 class="text-xl font-semibold text-gray-800 mb-4 flex items-center">
+            <i class="fas fa-robot mr-2 text-purple-500"></i>
+            AI Tweet Generator
+          </h2>
+          
+          <!-- AI Generation Form -->
+          <div class="mb-6 p-4 bg-gradient-to-r from-purple-50 to-blue-50 rounded-lg border">
+            <h3 class="font-medium text-gray-800 mb-3">Generate AI Tweet</h3>
+            <div class="space-y-3">
+              <textarea id="aiPrompt" placeholder="Enter a topic or idea for AI to create a tweet about..." 
+                        class="w-full border border-gray-300 rounded-lg p-3 h-20 focus:ring-2 focus:ring-purple-500 focus:border-transparent"></textarea>
+              <div class="flex items-center space-x-4">
+                <select id="aiTone" class="border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-purple-500">
+                  <option value="engaging">Engaging</option>
+                  <option value="professional">Professional</option>
+                  <option value="casual">Casual</option>
+                  <option value="humorous">Humorous</option>
+                  <option value="informative">Informative</option>
+                </select>
+                <button onclick="generateAITweet()" class="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg transition flex items-center">
+                  <i class="fas fa-magic mr-2"></i>Generate
+                </button>
+                <button onclick="getAISuggestions()" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition flex items-center">
+                  <i class="fas fa-lightbulb mr-2"></i>Get Ideas
+                </button>
+              </div>
+            </div>
+            
+            <!-- AI Generated Tweet Display -->
+            <div id="aiGeneratedTweet" class="hidden mt-4 p-4 bg-white rounded-lg border border-purple-200">
+              <div class="flex justify-between items-start mb-2">
+                <h4 class="font-medium text-gray-800">Generated Tweet:</h4>
+                <span id="tweetCharCount" class="text-sm text-gray-500">0/280</span>
+              </div>
+              <div id="generatedTweetText" class="bg-gray-50 p-3 rounded border text-gray-800 mb-3"></div>
+              <div class="flex space-x-2">
+                <button onclick="useGeneratedTweet()" class="bg-green-600 hover:bg-green-700 text-white px-3 py-1 rounded text-sm transition">
+                  Use This Tweet
+                </button>
+                <button onclick="copyToClipboard()" class="bg-gray-600 hover:bg-gray-700 text-white px-3 py-1 rounded text-sm transition">
+                  Copy
+                </button>
+                <button onclick="regenerateTweet()" class="bg-purple-600 hover:bg-purple-700 text-white px-3 py-1 rounded text-sm transition">
+                  Regenerate
+                </button>
+              </div>
+            </div>
+
+            <!-- AI Suggestions Display -->
+            <div id="aiSuggestions" class="hidden mt-4">
+              <h4 class="font-medium text-gray-800 mb-2">Tweet Ideas:</h4>
+              <div id="suggestionsList" class="space-y-2"></div>
+            </div>
+          </div>
+
+          <!-- Post Tweet Immediately -->
+          <form action="/tweet/post" method="POST" enctype="multipart/form-data" class="space-y-4">
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-2">Tweet Text</label>
+              <textarea name="text" id="tweetText" placeholder="What's on your mind?" 
+                        class="w-full border border-gray-300 rounded-lg p-3 h-24 focus:ring-2 focus:ring-blue-500 focus:border-transparent" 
+                        maxlength="280" required></textarea>
+              <div class="text-right text-sm text-gray-500 mt-1">
+                <span id="charCount">0</span>/280
+              </div>
+            </div>
+            
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-2">Image (Optional)</label>
+              <input type="file" name="image" accept="image/*" 
+                     class="w-full border border-gray-300 rounded-lg p-2 focus:ring-2 focus:ring-blue-500">
+            </div>
+            
+            <button type="submit" id="postNowBtn" 
+                    class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-4 rounded-lg transition duration-200 flex items-center justify-center">
+              <i class="fas fa-paper-plane mr-2"></i>
+              Post Tweet Now
+            </button>
+          </form>
+        </div>
+
+        <!-- Schedule Tweet -->
+        <div class="bg-white shadow-lg rounded-xl p-6 border border-gray-200">
+          <h2 class="text-xl font-semibold text-gray-800 mb-4 flex items-center">
+            <i class="fas fa-clock mr-2 text-green-500"></i>
+            Schedule AI Tweet
+          </h2>
+          
+          <form action="/tweet/schedule" method="POST" enctype="multipart/form-data" class="space-y-4">
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-2">Topic/Prompt for AI</label>
+              <textarea name="customPrompt" placeholder="Enter a topic for AI to generate daily tweets about..." 
+                        class="w-full border border-gray-300 rounded-lg p-3 h-20 focus:ring-2 focus:ring-green-500 focus:border-transparent" 
+                        required></textarea>
+              <p class="text-sm text-gray-500 mt-1">🧠 AI will generate unique tweets based on this prompt for each scheduled post.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-2">Schedule Type</label>
+                <select name="scheduleType" id="scheduleType" class="w-full border border-gray-300 rounded-lg p-2 focus:ring-2 focus:ring-green-500" required>
+                  <option value="everyMinute">Every Minute (Testing)</option>
+                  <option value="hourly">Every Hour</option>
+                  <option value="daily" selected>Every Day</option>
+                  <option value="weekly">Every Week</option>
+                  <option value="custom">Custom Cron</option>
+                </select>
+              </div>
+
+              <div id="timeInput" class="block">
+                <label class="block text-sm font-medium text-gray-700 mb-2">Time</label>
+                <input type="time" name="time" value="09:00" class="w-full border border-gray-300 rounded-lg p-2 focus:ring-2 focus:ring-green-500">
+              </div>
+            </div>
+
+            <div id="customCronInput" class="hidden">
+              <label class="block text-sm font-medium text-gray-700 mb-2">Custom Cron Expression</label>
+              <input type="text" name="customCron" placeholder="e.g. 0 9 * * 1-5 (weekdays at 9 AM)" 
+                     class="w-full border border-gray-300 rounded-lg p-2 focus:ring-2 focus:ring-green-500">
+              <p class="text-sm text-gray-500 mt-1">Use standard cron format: minute hour day month weekday</p>
+            </div>
+
+            <div class="flex items-center space-x-4">
+              <label class="flex items-center">
+                <input type="checkbox" name="includeImage" value="true" class="rounded border-gray-300 text-green-600 focus:ring-green-500">
+                <span class="ml-2 text-sm text-gray-700">Include AI-generated images</span>
+              </label>
+            </div>
+
+            <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white font-medium py-3 px-4 rounded-lg transition duration-200 flex items-center justify-center">
+              <i class="fas fa-calendar-plus mr-2"></i>
+              Schedule AI Tweet
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="space-y-6">
+        
+        <!-- Stats Cards -->
+        <div class="grid grid-cols-1 gap-4">
+          <div class="bg-white shadow-lg rounded-xl p-6 border border-gray-200 text-center">
+            <div class="text-3xl font-bold text-blue-600"><%= stats.todayTweets %></div>
+            <div class="text-sm text-gray-600">Today's Tweets</div>
+          </div>
+          <div class="bg-white shadow-lg rounded-xl p-6 border border-gray-200 text-center">
+            <div class="text-3xl font-bold text-green-600"><%= stats.totalTweets %></div>
+            <div class="text-sm text-gray-600">Total Tweets</div>
+          </div>
+          <div class="bg-white shadow-lg rounded-xl p-6 border border-gray-200 text-center">
+            <div class="text-3xl font-bold text-purple-600"><%= stats.scheduledTweets %></div>
+            <div class="text-sm text-gray-600">Scheduled</div>
+          </div>
+        </div>
+
+        <!-- Quick Actions -->
+        <div class="bg-white shadow-lg rounded-xl p-6 border border-gray-200">
+          <h3 class="text-lg font-semibold text-gray-800 mb-4">Quick Actions</h3>
+          <div class="space-y-3">
+            <a href="/tweet/scheduled" class="block w-full bg-gray-100 hover:bg-gray-200 text-gray-800 py-2 px-4 rounded-lg transition text-center">
+              <i class="fas fa-list mr-2"></i>View Scheduled Tweets
+            </a>
+            <button onclick="showTweetHistory()" class="block w-full bg-gray-100 hover:bg-gray-200 text-gray-800 py-2 px-4 rounded-lg transition text-center">
+              <i class="fas fa-history mr-2"></i>Tweet History
+            </button>
+            <a href="/dashboard/stats" class="block w-full bg-gray-100 hover:bg-gray-200 text-gray-800 py-2 px-4 rounded-lg transition text-center">
+              <i class="fas fa-chart-bar mr-2"></i>Analytics
+            </a>
+          </div>
+        </div>
+
+        <!-- Recent Scheduled Tweets -->
+        <div class="bg-white shadow-lg rounded-xl p-6 border border-gray-200">
+          <h3 class="text-lg font-semibold text-gray-800 mb-4">Recent Scheduled</h3>
+          <% if (tweets && tweets.slice(0, 3).length > 0) { %>
+            <div class="space-y-3">
+              <% tweets.slice(0, 3).forEach(tweet => { %>
+                <div class="tweet-card bg-gray-50 p-3 rounded-lg border">
+                  <p class="text-sm font-medium text-gray-800 line-clamp-2">
+                    <%= tweet.text || tweet.custom_prompt || 'AI Generated Tweet' %>
+                  </p>
+                  <div class="flex justify-between items-center mt-2">
+                    <span class="text-xs text-gray-500">
+                      <%= tweet.schedule_type %>
+                    </span>
+                    <span class="text-xs px-2 py-1 rounded-full <%= tweet.status === 'scheduled' ? 'bg-green-100 text-green-800' : tweet.status === 'sent' ? 'bg-blue-100 text-blue-800' : 'bg-red-100 text-red-800' %>">
+                      <%= tweet.status %>
+                    </span>
+                  </div>
+                </div>
+              <% }) %>
+            </div>
+          <% } else { %>
+            <p class="text-gray-500 text-sm">No scheduled tweets yet.</p>
+          <% } %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Loading Modal -->
+  <div id="loadingModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+    <div class="bg-white rounded-lg p-6 flex items-center space-x-3">
+      <div class="animate-spin rounded-full h-6 w-6 border-b-2 border-purple-600"></div>
+      <span>Generating AI tweet...</span>
+    </div>
+  </div>
+
+  <script>
+    let currentGeneratedTweet = '';
+    
+    // Character counter for tweet text
+    document.getElementById('tweetText').addEventListener('input', function() {
+      const count = this.value.length;
+      document.getElementById('charCount').textContent = count;
+      if (count > 280) {
+        document.getElementById('charCount').style.color = 'red';
+      } else {
+        document.getElementById('charCount').style.color = '#6b7280';
+      }
+    });
+
+    // Schedule type change handler
+    document.getElementById('scheduleType').addEventListener('change', function() {
+      const timeInput = document.getElementById('timeInput');
+      const customCronInput = document.getElementById('customCronInput');
+      
+      if (this.value === 'daily' || this.value === 'weekly') {
+        timeInput.style.display = 'block';
+        customCronInput.style.display = 'none';
+      } else if (this.value === 'custom') {
+        timeInput.style.display = 'none';
+        customCronInput.style.display = 'block';
+      } else {
+        timeInput.style.display = 'none';
+        customCronInput.style.display = 'none';
+      }
+    });
+
+    // Rate limit status update
+    async function updateRateLimitStatus() {
+      try {
+        const response = await fetch('/tweet/rate-status');
+        const data = await response.json();
+
+        if (data.success) {
+          const statusEl = document.getElementById('statusText');
+          const indicatorEl = document.getElementById('statusIndicator');
+          const progressBar = document.getElementById('progressBar');
+          const remainingEl = document.getElementById('remainingTweets');
+          const resetTimeEl = document.getElementById('resetTime');
+
+          const remaining = data.remaining;
+          const limit = data.limit;
+          const percentage = (remaining / limit) * 100;
+
+          // Update status
+          if (data.status === 'OK') {
+            statusEl.textContent = data.message;
+            indicatorEl.className = 'w-4 h-4 rounded-full mr-3 bg-green-500';
+            progressBar.className = 'h-3 rounded-full transition-all duration-300 ' +
+              (percentage > 50 ? 'bg-green-500' : percentage > 20 ? 'bg-yellow-500' : 'bg-red-500');
+          } else {
+            statusEl.textContent = data.message;
+            indicatorEl.className = 'w-4 h-4 rounded-full mr-3 bg-red-500';
+            progressBar.className = 'h-3 rounded-full bg-red-500 transition-all duration-300';
+          }
+
+          progressBar.style.width = `${percentage}%`;
+          remainingEl.textContent = `${remaining} of ${limit} tweets remaining`;
+
+          if (data.resetTime) {
+            const resetDate = new Date(data.resetTime);
+            resetTimeEl.textContent = `Resets: ${resetDate.toLocaleTimeString()}`;
+          }
+
+          // Update button states
+          const postNowBtn = document.getElementById('postNowBtn');
+          if (postNowBtn) {
+            postNowBtn.disabled = data.status !== 'OK';
+            if (data.status !== 'OK') {
+              postNowBtn.classList.add('opacity-50', 'cursor-not-allowed');
+            } else {
+              postNowBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+            }
+          }
+        }
+      } catch (error) {
+        console.error('Error fetching rate limit status:', error);
+      }
+    }
+
+    function refreshRateLimit() {
+      document.getElementById('statusText').textContent = 'Refreshing...';
+      updateRateLimitStatus();
+    }
+
+    // AI Tweet Generation
+    async function generateAITweet() {
+      const prompt = document.getElementById('aiPrompt').value.trim();
+      const tone = document.getElementById('aiTone').value;
+      
+      if (!prompt) {
+        alert('Please enter a topic or idea for the AI to work with.');
+        return;
+      }
+
+      document.getElementById('loadingModal').classList.remove('hidden');
+      
+      try {
+        const response = await fetch('/tweet/ai-generate', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ prompt, tone }),
+        });
+        
+        const data = await response.json();
+        
+        if (data.success) {
+          currentGeneratedTweet = data.data.text;
+          document.getElementById('generatedTweetText').textContent = currentGeneratedTweet;
+          document.getElementById('tweetCharCount').textContent = `${currentGeneratedTweet.length}/280`;
+          document.getElementById('aiGeneratedTweet').classList.remove('hidden');
+          document.getElementById('aiSuggestions').classList.add('hidden');
+        } else {
+          alert('Failed to generate tweet: ' + data.error);
+        }
+      } catch (error) {
+        console.error('Error generating AI tweet:', error);
+        alert('Failed to generate tweet. Please try again.');
+      } finally {
+        document.getElementById('loadingModal').classList.add('hidden');
+      }
+    }
+
+    async function getAISuggestions() {
+      try {
+        const response = await fetch('/tweet/ai-suggestions/tech');
+        const data = await response.json();
+        
+        if (data.success) {
+          const suggestionsList = document.getElementById('suggestionsList');
+          suggestionsList.innerHTML = '';
+          
+          data.data.forEach(suggestion => {
+            const div = document.createElement('div');
+            div.className = 'ai-suggestion p-2 rounded border bg-white';
+            div.textContent = suggestion;
+            div.onclick = () => {
+              document.getElementById('aiPrompt').value = suggestion;
+            };
+            suggestionsList.appendChild(div);
+          });
+          
+          document.getElementById('aiSuggestions').classList.remove('hidden');
+          document.getElementById('aiGeneratedTweet').classList.add('hidden');
+        }
+      } catch (error) {
+        console.error('Error getting AI suggestions:', error);
+      }
+    }
+
+    function useGeneratedTweet() {
+      if (currentGeneratedTweet) {
+        document.getElementById('tweetText').value = currentGeneratedTweet;
+        document.getElementById('charCount').textContent = currentGeneratedTweet.length;
+        document.getElementById('aiGeneratedTweet').classList.add('hidden');
+      }
+    }
+
+    function copyToClipboard() {
+      if (currentGeneratedTweet) {
+        navigator.clipboard.writeText(currentGeneratedTweet).then(() => {
+          alert('Tweet copied to clipboard!');
+        });
+      }
+    }
+
+    function regenerateTweet() {
+      generateAITweet();
+    }
+
+    // Initialize
+    document.addEventListener('DOMContentLoaded', () => {
+      updateRateLimitStatus();
+      setInterval(updateRateLimitStatus, 5 * 60 * 1000); // Update every 5 minutes
+    });
+  </script>
+</body>
+</html>

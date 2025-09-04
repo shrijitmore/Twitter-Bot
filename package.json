@@ -1,0 +1,51 @@
+{
+  "name": "twitterbot",
+  "version": "1.0.0",
+  "description": "Automating a Twitter Posts",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "redis:start": "redis-server --daemonize yes",
+    "redis:stop": "redis-cli shutdown",
+    "test": "echo \"No tests specified\" && exit 0",
+    "logs": "tail -f app.log",
+    "health": "curl http://localhost:8080/health"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shrijitmore/Twitter-Bot.git"
+  },
+  "keywords": [
+    "Bot",
+    "AI"
+  ],
+  "author": "Shrijit More",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shrijitmore/Twitter-Bot/issues"
+  },
+  "homepage": "https://github.com/shrijitmore/Twitter-Bot#readme",
+  "dependencies": {
+    "@google/genai": "^1.16.0",
+    "@google/generative-ai": "^0.24.1",
+    "@supabase/supabase-js": "^2.56.1",
+    "axios": "^1.11.0",
+    "body-parser": "^2.2.0",
+    "bull": "^4.16.5",
+    "compression": "^1.8.1",
+    "dotenv": "^17.2.1",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.0.1",
+    "helmet": "^8.1.0",
+    "joi": "^18.0.1",
+    "multer": "^2.0.2",
+    "node-cron": "^4.2.1",
+    "nodemon": "^3.1.10",
+    "redis": "^5.8.2",
+    "twitter-api-v2": "^1.25.0",
+    "uuid": "^11.1.0",
+    "winston": "^3.17.0"
+  }
+}
